@@ -1,0 +1,72 @@
+[
+  {
+    "path": "/",
+    "page": "./home",
+    "chunk": "main"
+  },
+  {
+    "path": "/error",
+    "page": "./error",
+    "chunk": "main"
+  },
+  {
+    "path": "/setting",
+    "page": "./setting"
+  },
+  {
+    "path": "/result",
+    "page": "./result"
+  },
+  {
+    "path": "/categories",
+    "page": "./categories"
+  },
+  {
+    "path": "/science",
+    "page": "./science"
+  },
+  {
+    "path": "/sport",
+    "page": "./sport"
+  },
+  {
+    "path": "/images",
+    "page": "./images"
+  },
+  {
+    "path": "/musics",
+    "page": "./musics"
+  },
+  {
+    "path": "/physical",
+    "page": "./physical"
+  },
+  {
+    "path": "/phys",
+    "page": "./phys"
+  },
+  {
+    "path": "/science/:id",
+    "page": "./S1"
+  },
+  {
+    "path": "/sport/:id",
+    "page": "./SP1"
+  },
+  {
+    "path": "/images/:id",
+    "page": "./P1"
+  },
+  {
+    "path": "/music/:id",
+    "page": "./M1"
+  },
+  {
+    "path": "/testpage",
+    "page": "./testpage"
+  },
+  {
+    "path": "/tasks/:status(pending|completed)?",
+    "page": "./home"
+  }
+]
