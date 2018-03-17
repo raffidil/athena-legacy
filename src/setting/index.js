@@ -108,7 +108,7 @@ export default class Settings extends React.Component {
         <h1 className={s.fontstyle1} style={{ marginTop: '10px' }}>
           <Grid className="demo-grid-2">
             <Cell col={1}>
-              <IconButton style={{color: '#310035'}} name="home" colored onClick={this.gotoHome} />
+              <IconButton style={{color: '#263238'}} name="home" colored onClick={this.gotoHome} />
             </Cell>
             <Cell col={1}>Setting</Cell>
           </Grid>

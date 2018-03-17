@@ -13,11 +13,11 @@ import {
 } from 'react-mdl';
 import Layout from '../../components/Layout';
 import s from './styles.css';
-import sciPic from './sci.png';
-import sportPic from './sport.jpg';
-import contactPic from './contact.png';
-import musicPic from './music.jpeg';
-import physicalPic from './physical.jpeg';
+import sciPic from './science.jpg';
+import sportPic from './sport.jpeg';
+import contactPic from './picture.jpeg';
+import musicPic from './music.jpg';
+import physicalPic from './fun.jpeg';
 import Link from '../../components/Link';
 import history from '../history';
 
@@ -48,7 +48,7 @@ class AboutPage extends React.Component {
   }
 
   render() {
-    const CardWidth = '400px';
+    const CardWidth = '300px';
     const CardHeight = '140px';
     return (
       <Layout className={s.content}>
@@ -57,17 +57,17 @@ class AboutPage extends React.Component {
       }}>
           <Grid className="demo-grid-1" >
           <Cell col={1}>
-            <IconButton style={{color: '#310035'}} name="arrow_back" colored onClick={this.gotoHome}/>
+            <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoHome}/>
           </Cell>
-          <Cell col={1} style={{color: '#310035'}}>Մրցոյթներ</Cell>
+          <Cell col={1} style={{color: '#263238'}}>Մրցոյթներ</Cell>
             </Grid>
        </h1>
         <div style={{
           width: '100%',
-          margin: 'auto'
+          margin: 'auto',
         }}>
           <Grid className="demo-grid-1">
-            <Cell col={6}>
+            <Cell col={4}>
               <Card shadow={5} style={{
                 width: CardWidth,
                 height: '120px',
@@ -81,12 +81,13 @@ class AboutPage extends React.Component {
                 <CardActions border>
                   <Button colored style={{
                     fontSize: 30,
-                    color: '#310035'
-                  }} onClick={this.gotoScience}>Փուլ 1</Button>
+                    fontWeight: 'bold',
+                    color: '#263238'
+                  }} onClick={this.gotoScience}>Գիտական</Button>
                 </CardActions>
               </Card>
             </Cell>
-            <Cell col={6}>
+            <Cell col={4}>
               <Card shadow={5} style={{
                 width: CardWidth,
                 height: '120px',
@@ -95,19 +96,18 @@ class AboutPage extends React.Component {
                 <CardTitle style={{
                   color: '#fff',
                   height: '176px',
-                  background: `url(${musicPic}) center / cover`
+                  background: `url(${sportPic}) center / cover`
                 }}></CardTitle>
                 <CardActions border>
                   <Button colored style={{
                     fontSize: 30,
-                    color: '#310035'
-                  }} onClick={this.gotoMusics}>Փուլ 2</Button>
+                    fontWeight: 'bold',
+                    color: '#263238'
+                  }} onClick={this.gotoSport}>Մարզական</Button>
                 </CardActions>
               </Card>
             </Cell>
-          </Grid>
-          <Grid className="demo-grid-1">
-            <Cell col={6}>
+            <Cell col={4}>
               <Card shadow={5} style={{
                 width: CardWidth,
                 height: '120px',
@@ -121,12 +121,35 @@ class AboutPage extends React.Component {
                 <CardActions border>
                   <Button colored style={{
                     fontSize: 30,
-                    color: '#310035'
-                  }} onClick={this.gotoImages}>Փուլ 3</Button>
+                    fontWeight: 'bold',
+                    color: '#263238'
+                  }} onClick={this.gotoImages}>Պատկերներ</Button>
                 </CardActions>
               </Card>
             </Cell>
-            <Cell col={6}>
+          </Grid>
+          <Grid className="demo-grid-1">
+            <Cell col={4} offset={2}>
+              <Card shadow={5} style={{
+                width: CardWidth,
+                height: '120px',
+                margin: 'auto'
+              }}>
+                <CardTitle style={{
+                  color: '#fff',
+                  height: '176px',
+                  background: `url(${musicPic}) center / cover`
+                }}></CardTitle>
+                <CardActions border>
+                  <Button colored style={{
+                    fontSize: 30,
+                    fontWeight: 'bold',
+                    color: '#263238'
+                  }} onClick={this.gotoMusics}>Երաժշտութիւն</Button>
+                </CardActions>
+              </Card>
+            </Cell>
+            <Cell col={4}>
               <Card shadow={5} style={{
                 width: CardWidth,
                 height: '120px',
@@ -140,8 +163,9 @@ class AboutPage extends React.Component {
                 <CardActions border>
                   <Button colored style={{
                     fontSize: 30,
-                    color: '#310035'
-                  }} onClick={this.gotoPhysical}>Փուլ 4</Button>
+                    fontWeight: 'bold',
+                    color: '#263238'
+                  }} onClick={this.gotoPhysical}>Let's have fun</Button>
                 </CardActions>
               </Card>
             </Cell>

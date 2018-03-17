@@ -29,10 +29,10 @@ class QButton extends React.Component {
     this.props.onClick();
   }
   render() {
-    let color = '#7B1FA2';
+    let color = '#37474F';
     let text = this.props.itemtext;
     if (this.props.seen) {
-      color = '#E91E63';
+      color = '#0097A7';
       text = this.props.backitemtext;
     }
 

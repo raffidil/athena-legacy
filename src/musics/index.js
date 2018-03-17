@@ -66,9 +66,9 @@ class AboutPage extends React.Component {
         }}><Grid className="demo-grid-1" style={{
         }}>
           <Cell col={1}>
-            <IconButton style={{color: '#310035'}} name="arrow_back" colored onClick={this.gotoCategories}/>
+            <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoCategories}/>
           </Cell>
-          <Cell col={1} style={{color: '#310035'}}>Երաժշտութիւն</Cell>
+          <Cell col={1} style={{color: '#263238'}}>Երաժշտութիւն</Cell>
             </Grid>
        </h1>
         <div style={{
@@ -98,7 +98,6 @@ class AboutPage extends React.Component {
             <QButton text="6" onClick={() => this.makeSeen(6)} goto="/music/5" seen={this.state.seen[6]}/>
           </Cell>
         </Grid>
-        <div style={{backgroundColor: '#424242' , height: '1px',width: '49%',marginTop: '20px'}}/>
 
         <Grid className="demo-grid-1" style={{
           marginTop: '20px'

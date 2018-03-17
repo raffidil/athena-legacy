@@ -57,7 +57,7 @@ class AboutPage extends React.Component {
           marginTop: '20px'
         }}><Grid className="demo-grid-1" >
           <Cell col={1}>
-            <IconButton style={{color: '#310035'}} name="arrow_back" colored onClick={this.gotoCategories}/>
+            <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoCategories}/>
           </Cell>
           <Cell col={1}>Նկարներ</Cell>
             </Grid>
@@ -123,6 +123,26 @@ class AboutPage extends React.Component {
             <QButton text="15" onClick={() => this.makeSeen(15)} goto="/images/14" seen={this.state.seen[15]}/>
           </Cell>
               </Grid>
+
+              <Grid className="demo-grid-1" style={{
+                marginTop: '25px'
+              }}>
+              <Cell col={2}>
+                <QButton text="16" onClick={() => this.makeSeen(16)} goto="/images/15" seen={this.state.seen[16]}/>
+              </Cell>
+              <Cell col={2}>
+                <QButton text="17" onClick={() => this.makeSeen(17)} goto="/images/16" seen={this.state.seen[17]}/>
+              </Cell>
+              <Cell col={2}>
+                <QButton text="18" onClick={() => this.makeSeen(18)} goto="/images/17" seen={this.state.seen[18]}/>
+              </Cell>
+              <Cell col={2}>
+                <QButton text="19" onClick={() => this.makeSeen(19)} goto="/images/18" seen={this.state.seen[19]}/>
+              </Cell>
+              <Cell col={2}>
+                <QButton text="20" onClick={() => this.makeSeen(20)} goto="/images/19" seen={this.state.seen[20]}/>
+              </Cell>
+                  </Grid>
         </div>
       </Layout>
     );

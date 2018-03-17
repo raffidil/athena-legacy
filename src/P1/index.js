@@ -59,7 +59,7 @@ export default class Question extends React.Component {
     return (
       <Layout className={s.content}>
         <h1 className={s.fontstyle1} style={{ marginTop: '20px' }}>
-          <IconButton style={{color: '#310035'}} name="arrow_back" colored onClick={this.gotoImages} />
+          <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoImages} />
         </h1>
         <div style={{marginTop: '-80px'}}>
         <QPicture

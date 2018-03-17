@@ -61,28 +61,29 @@ export default class Question extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h1 className={s.fontstyle1} style={{ marginTop: '55px' }}>
-          <Grid className="demo-grid-1" style={{ marginTop: '20px' }}>
+        <h1 className={s.fontstyle1} style={{ marginTop: '10px' }}>
+          <Grid className="demo-grid-1">
             <Cell col={1}>
-              <IconButton name="arrow_back" colored onClick={this.gotoSport} />
+              <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoSport} />
             </Cell>
-            <Cell col={11} className={s.ScienceQuestionFont}
-              style={{ fontSize: this.question.fontsize}}>{this.question.text}
+            <Cell col={11}
+              className={s.ScienceQuestionFont}
+              style={{fontSize: (this.question.fontSize || '45px')}}>{this.question.text}
             </Cell>
           </Grid>
         </h1>
         <Grid style={{ fontSize: '30px', marginTop: '50px',marginBottom: '-47px'  }} className="demo-grid-1">
           <Cell offset={1} col={1} style={{ zIndex: '2' }}>
-            <Icon style={{ color: '#E91E63', fontSize: '60px', marginLeft: '90px' }} name="looks_one" />
+            <Icon style={{ color: '#E64A19', fontSize: '60px', marginLeft: '90px' }} name="looks_one" />
           </Cell>
           <Cell offset={2} col={1} style={{ zIndex: '2' }}>
-            <Icon style={{ color: '#E91E63', fontSize: '60px', marginLeft: '90px' }} name="looks_two" />
+            <Icon style={{ color: '#E64A19', fontSize: '60px', marginLeft: '90px' }} name="looks_two" />
           </Cell>
           <Cell offset={2} col={1} style={{ zIndex: '2' }}>
-            <Icon style={{ color: '#E91E63', fontSize: '60px', marginLeft: '90px' }} name="looks_3" />
+            <Icon style={{ color: '#E64A19', fontSize: '60px', marginLeft: '90px' }} name="looks_3" />
           </Cell>
           <Cell offset={2} col={1} style={{ zIndex: '2' }}>
-            <Icon style={{ color: '#E91E63', fontSize: '60px', marginLeft: '90px' }} name="looks_4" />
+            <Icon style={{ color: '#E64A19', fontSize: '60px', marginLeft: '90px' }} name="looks_4" />
           </Cell>
         </Grid>
         <Grid style={{marginLeft: '-10px'}} className="demo-grid-1">
@@ -91,7 +92,7 @@ export default class Question extends React.Component {
             (
               <Cell col={3} key={i}>
                 <AnswerCard
-                  color={(this.state.reveal && answer.correct) ? '#2E7D32' : '#0d47a1'}
+                  color={(this.state.reveal && answer.correct) ? '#2E7D32' : '#006064'}
                   text={answer.text}
                   onClick={() => this.answer(answer.correct)}
                   fontSize={answer.fontSize}

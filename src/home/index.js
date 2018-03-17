@@ -18,7 +18,7 @@ import {
 import db from 'localforage';
 import Layout from '../../components/Layout';
 import s from './styles.css';
-import homepic from './l.png';
+import homepic from './logo.png';
 import Link from '../../components/Link';
 import history from '../history';
 
@@ -45,13 +45,14 @@ class AboutPage extends React.Component {
           margin: 'auto',
           marginTop: '10px'
         }}>
-                  <img src={homepic} style={{width: '30%',display: 'block',margin: 'auto',marginTop: '40px'}}/>
+                  <img src={homepic} style={{width: '35%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
+                  <div style={{position: 'absolute', top: 450, left: 475, fontSize: 20}}>30-րդ Գարնանային խաղեր</div>
                   <Button
                     raised
                     accent
-                    style={{ backgroundColor: '#821679',display: 'block',margin: 'auto',marginTop: '20px',height: 80, width:150 ,fontSize: 35}}
+                    style={{ backgroundColor: '#00838F',display: 'block',margin: 'auto',marginTop: '20px',height: 80, width:200 ,fontSize: 35}}
                     onClick={this.gotoCategories}
-                    ripple>Startt</Button>
+                    ripple>Start</Button>
 
                {/*<Card shadow={5} style={{
                 width: '600px',

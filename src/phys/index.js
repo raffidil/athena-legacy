@@ -39,12 +39,12 @@ class AboutPage extends React.Component {
           marginTop: '20px'
         }}>
           <Cell col={1}>
-            <IconButton name="arrow_back" style={{ color: '#310035'}}colored onClick={this.gotoPhysical}/>
+            <IconButton name="arrow_back" style={{ color: '#263238'}}colored onClick={this.gotoPhysical}/>
           </Cell>
             </Grid>
        </h1>
         <div style={{ marginLeft: '299px', marginTop: '-65px' }}>
-          <BigTimer timeout={60}/>
+          <BigTimer timeout={90}/>
         </div>
       </Layout>
     );

@@ -30,9 +30,9 @@ class QButton extends React.Component {
     history.push({ pathname: this.props.goto })
   }
   render() {
-    let color = '#7B1FA2';
+    let color = '#37474F';
     if (this.props.seen) {
-      color = '#E91E63';
+      color = '#B71C1C';
     }
 
     return (

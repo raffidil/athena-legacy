@@ -8,7 +8,7 @@ import cx from 'classnames';
 import db from 'localforage';
 import Header from './Header';
 import s from './Layout.css';
-import mainPic from './edit1.png';
+import mainPic from './back.jpg';
 import teams from '../../src/teams';
 import mira from './Mira.ogg';
 
