@@ -31,7 +31,7 @@ class Header extends React.Component {
         <div className={`mdl-layout__header-row ${s.row}`}>
           <img className={s.logo} src={logo} alt="Smiley face" height="42" width="42" />
           <Link style={{marginLeft: '75px',fontSize: 32}} className={`mdl-layout-title ${s.title}`} to="/">
-            Իրանահայ թեմերի երիտասարդական խորհրդաժողով
+            Ն. Ջ. Հայ Մ. Մ. «Արարատ» Միութեան Ուսանողական Միաւոր
           </Link>
           <div className="mdl-layout-spacer"/>
           <Navigation/>

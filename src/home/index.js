@@ -51,7 +51,7 @@ class AboutPage extends React.Component {
                     accent
                     style={{ backgroundColor: '#821679',display: 'block',margin: 'auto',marginTop: '20px',height: 80, width:150 ,fontSize: 35}}
                     onClick={this.gotoCategories}
-                    ripple>Start</Button>
+                    ripple>Startt</Button>
 
                {/*<Card shadow={5} style={{
                 width: '600px',
