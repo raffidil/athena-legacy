@@ -19,15 +19,14 @@ import s from './styles.css';
 import QSquare from '../../components/QSquare';
 import Link from '../../components/Link';
 import history from '../history';
-import mane from './mane.jpeg';
-import holo from './holo.jpg';
+import QButton from '../../components/QButton';
 import Timer from '../../components/Timer';
 
 
 class AboutPage extends React.Component {
   constructor() {
     super();
-    this.state = { seen: [] };
+    this.state = { seen: [],wordsSeen: [] };
   }
 
   componentWillMount() {
@@ -36,6 +35,11 @@ class AboutPage extends React.Component {
   componentDidMount() {
     document.title = 'Ֆիզիկական';
     db.getItem('physical').then((state) => {
+      this.setState(state);
+    }).catch((err) => {
+      console.log(err);
+    })
+    db.getItem('words').then((state) => {
       this.setState(state);
     }).catch((err) => {
       console.log(err);
@@ -54,6 +58,17 @@ class AboutPage extends React.Component {
     this.setState({ seen });
 
     db.setItem('physical', this.state)
+    .catch((err) => {
+      console.log(err);
+    });
+  }
+
+  wordsMakeSeen = (number) => {
+    const seen = this.state.wordsSeen;
+    seen[number] = true;
+    this.setState({ seen });
+
+    db.setItem('words', this.state)
     .catch((err) => {
       console.log(err);
     });
@@ -120,13 +135,32 @@ class AboutPage extends React.Component {
             <QSquare itemtext="12" backitemtext="l" onClick={() => this.makeSeen(12)} seen={this.state.seen[12]}/>
           </Cell>
         </Grid>
-
         </div>
-        <FABButton
-          raised name="menu"
-          style={{ backgroundColor: '#546E7A',display: 'block',margin: 'auto',marginTop: '20px',color: '#fff'}}
-          onClick={this.gotoPhys}
-          ripple><Icon name="timer" /></FABButton>
+
+        <Grid className="demo-grid-1">
+          <Cell col={1}>
+              <QButton text="A" onClick={() => this.wordsMakeSeen(1)} goto="/words/1" seen={this.state.wordsSeen[1]}/>
+          </Cell>
+          <Cell col={1}>
+              <QButton text="B" onClick={() => this.wordsMakeSeen(2)} goto="/words/2" seen={this.state.wordsSeen[2]}/>
+          </Cell>
+          <Cell col={1}>
+              <QButton text="C" onClick={() => this.wordsMakeSeen(3)} goto="/words/3" seen={this.state.wordsSeen[3]}/>
+          </Cell>
+          <Cell col={1}>
+              <QButton text="D" onClick={() => this.wordsMakeSeen(4)} goto="/words/4" seen={this.state.wordsSeen[4]}/>
+          </Cell>
+
+          <Cell col={1} offset={2}>
+            <FABButton
+              raised name="menu"
+              style={{ backgroundColor: '#546E7A',display: 'block',margin: 'auto',color: '#fff'}}
+              onClick={this.gotoPhys}
+              ripple><Icon name="timer" />
+          </FABButton>
+        </Cell>
+        </Grid>
+
 
       </Layout>
     );

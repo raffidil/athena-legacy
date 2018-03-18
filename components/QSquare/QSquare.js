@@ -32,12 +32,16 @@ class QButton extends React.Component {
     let color = '#37474F';
     let text = this.props.itemtext;
     if (this.props.seen) {
-      color = '#0097A7';
+      if (this.props.isWord){
+        color = '#8BC34A';
+      } else {
+        color = '#0097A7';
+      }
       text = this.props.backitemtext;
     }
 
     return (
-      <Button onClick={this.click} raised ripple colored style={{ backgroundColor: color, fontSize: '30px', color: '#fff', width: '250px', height: '90px' }}>
+      <Button onClick={this.click} raised ripple colored style={{ backgroundColor: color, fontSize: '30px', color: '#fff', width: '250px', height: this.props.isWord ? '50px' : '90px', ...this.props.style}}>
         {text}
       </Button>
     )

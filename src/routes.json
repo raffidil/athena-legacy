@@ -46,6 +46,10 @@
     "page": "./phys"
   },
   {
+    "path": "/words/:id",
+    "page": "./words"
+  },
+  {
     "path": "/science/:id",
     "page": "./S1"
   },

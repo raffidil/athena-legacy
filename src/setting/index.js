@@ -21,7 +21,7 @@ import history from '../history';
 import teams from '../teams';
 import adara from './adara.mp3';
 import pollux from './pollux.mp3';
-
+import lists from '../words/lists';
 
 export default class Settings extends React.Component {
 
@@ -59,6 +59,9 @@ export default class Settings extends React.Component {
     db.setItem('musics', {}).catch(console.log);
     db.setItem('sport', {}).catch(console.log);
     db.setItem('physical', {}).catch(console.log);
+    db.setItem('words', {}).catch(console.log);
+    lists.forEach(list => db.setItem('wordCard'+list.id, {}).catch(console.log))
+
   }
   clearAllDb = () => {
     const audio = new Audio(pollux);
@@ -68,7 +71,10 @@ export default class Settings extends React.Component {
     db.setItem('musics', {}).catch(console.log);
     db.setItem('sport', {}).catch(console.log);
     db.setItem('physical', {}).catch(console.log);
+    db.setItem('words', {}).catch(console.log);
+    db.setItem('wordCard', {}).catch(console.log);
     db.setItem('scores', {}).catch(console.log);
+      lists.forEach(list => db.setItem('wordCard'+list.id, {}).catch(console.log))
     this.OpenDialog();
   }
 
