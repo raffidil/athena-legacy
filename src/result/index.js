@@ -65,7 +65,7 @@ export default class Question extends React.Component {
       <Layout className={s.content}>
 
         <h1 className={s.fontstyle1} style={{
-          marginTop: '110px'
+          marginTop: '25px'
         }}>
 
         </h1>
@@ -101,7 +101,7 @@ export default class Question extends React.Component {
            </Cell>
          </Grid>
           ))}
-          <Grid className="demo-grid-1" style={{marginTop: '25px', marginLeft: 20}}>
+          <Grid className="demo-grid-1" style={{marginTop: '10px', marginLeft: 20}}>
             <Cell col={1} style={{marginTop: -30}}>
               <img src={athena} style={{width: '240%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
             </Cell>
@@ -111,7 +111,7 @@ export default class Question extends React.Component {
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 15}}>created by Raffi Dilanchian</div>
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>https://github.com/raffidil</div>
             </Cell>
-            <Cell col={1} offset={5} style={{marginTop: 130}}>
+            <Cell col={1} offset={5} style={{marginTop: 110}}>
               <IconButton name="info_outline" colored style={{color: 'teal'}} onClick={this.gotoAbout}/>
             </Cell>
 

@@ -124,15 +124,14 @@ export default class Settings extends React.Component {
             <List>
               <ListItem><span style={{ fontSize: '25px' }}>Score Manual Setting</span></ListItem>
               {teams.map(team => (
-                <Card key={team.id} shadow={2} style={{ width: '360px', minHeight: '50px', margin: '-12px', marginLeft: '-5px', marginTop: '15px' }}>
+                <Card key={team.id} shadow={2} style={{ width: '280px', minHeight: '30px', margin: '-12px', marginLeft: '10px', marginTop: '15px' }}>
                  <ListItem style={{ marginTop: '-8px' }}>
                    <span style={{ marginRight: '20px' }}>
-                     <FABButton onClick={() => this.dec(team)} colored style={{ color: '#eceff1', backgroundColor: '#f44336' }} mini>
-                       <Icon name="remove" /> </FABButton>
-                     <FABButton onClick={() => this.inc(team)} colored mini style={{ color: '#eceff1', backgroundColor: '#388e3c', marginLeft: '5px' }} >
-                       <Icon name="add" /> </FABButton>
+                     <IconButton name="remove" onClick={() => this.dec(team)} colored style={{ color: 'red' }} />
+
+                     <IconButton name="add" onClick={() => this.inc(team)} colored mini style={{ color: '#388e3c', marginLeft: '5px' }} />
                    </span>
-                   <span style={{ color: team.backColor, fontSize: '25px'}}>{team.name}</span>
+                   <span style={{ color: team.backColor, fontSize: '20px'}}>{team.name}</span>
                  </ListItem></Card>
                ))}
             </List>

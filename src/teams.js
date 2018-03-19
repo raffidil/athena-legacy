@@ -72,17 +72,17 @@ const Teams = [
   {
     // Heavy PINK
     id: 1,
-    name: 'Ա Խումբ',
+    name: 'team1',
     color: '#f8bbd0',
     backColor: '#d81b60',
   },
-  // {
-  //   // VIOLET
-  //   id: 2,
-  //   name: 'Բ Խումբ',
-  //   color: '#e1bee7',
-  //   backColor: '#8e24aa',
-  // },
+  {
+    // VIOLET
+    id: 2,
+    name: 'team2',
+    color: '#e1bee7',
+    backColor: '#8e24aa',
+  },
   // {
   //   //DARK BLUE
   //   id: 3,
@@ -93,7 +93,7 @@ const Teams = [
   {
     // BLUE SKY
     id: 4,
-    name: 'Բ Խումբ',
+    name: 'team3',
     color: '#bbdefb',
     backColor: '#0277bd',
   },
@@ -107,38 +107,40 @@ const Teams = [
   {
     // PESTEI
     id: 6,
-    name: 'Գ Խումբ',
+    name: 'team4',
     color: '#dcedc8',
     backColor: '#8bc34a',
   },
   {
     // YELLOW
     id: 7,
-    name: 'Դ Խումբ',
+    name: 'team5',
     color: '#fff9c4',
     backColor: '#fbc02d',
   },
+
   {
     // ORANGE
     id: 8,
-    name: 'Ե Խումբ',
+    name: 'team6',
     color: '#ffe0b2',
     backColor: '#fb8c00',
   },
-  // {
-  //   //BROWN
-  //   id: 9,
-  //   //name: 'Ուրմիա',
-  //   color: '#D7CCC8',
-  //   backColor: '#6D4C41',
-  // },
   {
     // RED
-    id: 10,
-    name: 'Զ Խումբ',
+    id: 9,
+    name: 'team7',
     color: '#ffcdd2',
     backColor: '#e53935',
   },
+  {
+    //BROWN
+    id: 10,
+    name: 'team8',
+    color: '#D7CCC8',
+    backColor: '#6D4C41',
+  },
+
 ];
 
 export default Teams;
