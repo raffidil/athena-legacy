@@ -68,15 +68,15 @@ class WordPage extends React.Component {
           </Cell>
             </Grid>
        </h1>
-       <Grid className="demo-grid-1"style={{
-         marginTop: '-60px'}}>
+       <Grid className="demo-grid-1">
          <Cell col={6}>
-           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '-65px'}}>
            {this.list && this.list.list.map((text , index)=> (
              <QSquare isWord itemtext={text.text} backitemtext={text.text} key={index} onClick={() => this.makeSeen(index)} seen={this.state.seen[index]} style={{marginTop: '10px'}}/>
            ))}
          </div>
          </Cell>
+         <Cell col={6}><BigTimer timeout={90}/></Cell>
            </Grid>
 
 

@@ -42,6 +42,10 @@
     "page": "./physical"
   },
   {
+    "path": "/about",
+    "page": "./about"
+  },
+  {
     "path": "/phys",
     "page": "./phys"
   },

@@ -41,9 +41,7 @@ class AboutPage extends React.Component {
           </Cell>
             </Grid>
        </h1>
-        <div style={{ marginLeft: '299px', marginTop: '-65px' }}>
-          <BigTimer timeout={90}/>
-        </div>
+      
       </Layout>
     );
   }

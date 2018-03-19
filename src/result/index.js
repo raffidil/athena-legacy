@@ -66,7 +66,7 @@ export default class Question extends React.Component {
 
         </h1>
        {teams.map(team => (
-         <Grid className="demo-grid-1" style={{marginTop: '-10px'}}>
+         <Grid key={team.id} className="demo-grid-1" style={{marginTop: '-10px'}}>
            <Cell col={2} style={{marginTop: '-5px'}}>
              <Card shadow={0} style={{
                width: '215px',
@@ -97,6 +97,11 @@ export default class Question extends React.Component {
            </Cell>
          </Grid>
           ))}
+          <Grid className="demo-grid-1" style={{marginTop: '120px'}}>
+            <Cell col={1} offset={11}>
+              <IconButton name="mood" colored />
+            </Cell>
+          </Grid>
       </Layout>
     );
   }

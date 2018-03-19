@@ -53,9 +53,15 @@ class AboutPage extends React.Component {
   }
 
   makeSeen = (number) => {
-    const seen = this.state.seen;
-    seen[number] = true;
-    this.setState({ seen });
+    let seen = this.state.seen;
+    if(seen[number] == false){
+      seen[number] = true;
+      this.setState({ seen });
+    }else{
+      seen[number] = !seen[number];
+      this.setState({ seen });
+    }
+
 
     db.setItem('physical', this.state)
     .catch((err) => {
@@ -137,8 +143,16 @@ class AboutPage extends React.Component {
         </Grid>
         </div>
 
-        <Grid className="demo-grid-1">
+        <Grid className="demo-grid-1" style={{marginLeft: 15}}>
           <Cell col={1}>
+            <FABButton
+              raised name="menu"
+              style={{ backgroundColor: '#546E7A',display: 'block',margin: 'auto',color: '#fff'}}
+              onClick={this.gotoPhys}
+              ripple><Icon name="timer" />
+          </FABButton>
+        </Cell>
+          <Cell col={1} offset={3}>
               <QButton text="A" onClick={() => this.wordsMakeSeen(1)} goto="/words/1" seen={this.state.wordsSeen[1]}/>
           </Cell>
           <Cell col={1}>
@@ -151,14 +165,6 @@ class AboutPage extends React.Component {
               <QButton text="D" onClick={() => this.wordsMakeSeen(4)} goto="/words/4" seen={this.state.wordsSeen[4]}/>
           </Cell>
 
-          <Cell col={1} offset={2}>
-            <FABButton
-              raised name="menu"
-              style={{ backgroundColor: '#546E7A',display: 'block',margin: 'auto',color: '#fff'}}
-              onClick={this.gotoPhys}
-              ripple><Icon name="timer" />
-          </FABButton>
-        </Cell>
         </Grid>
 
 
