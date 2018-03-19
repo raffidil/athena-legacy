@@ -21,10 +21,10 @@ class AboutPage extends React.Component {
     document.body.style.backgroundColor = '#ffffff';
   }
   componentDidMount() {
-    document.title = 'Ֆիզիկական';
+    document.title = 'About';
   }
-  gotoPhysical = () => {
-    history.push({ pathname: '/physical' });
+  gotoResult(){
+    history.push({ pathname: '/result' });
   }
 
 
@@ -37,11 +37,11 @@ class AboutPage extends React.Component {
           marginTop: '20px'
         }}>
           <Cell col={1}>
-            <IconButton name="arrow_back" style={{ color: '#263238'}}colored onClick={this.gotoPhysical}/>
+            <IconButton name="arrow_back" style={{ color: '#263238'}}colored onClick={this.gotoResult}/>
           </Cell>
             </Grid>
        </h1>
-      
+
       </Layout>
     );
   }

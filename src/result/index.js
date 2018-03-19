@@ -32,6 +32,7 @@ import Link from '../../components/Link';
 import AnswerCard from '../../components/AnswerCard';
 import history from '../history';
 import teams from '../teams';
+import athena from './athena.png';
 
 export default class Question extends React.Component {
   constructor(props) {
@@ -47,6 +48,9 @@ export default class Question extends React.Component {
   }
   gotoHome() {
     history.push({ pathname: '/' });
+  }
+  gotoAbout() {
+    history.push({ pathname: '/about' });
   }
   updateScores = () => {
     db.getItem('scores').then((scores) => {
@@ -97,10 +101,20 @@ export default class Question extends React.Component {
            </Cell>
          </Grid>
           ))}
-          <Grid className="demo-grid-1" style={{marginTop: '120px'}}>
-            <Cell col={1} offset={11}>
-              <IconButton name="mood" colored />
+          <Grid className="demo-grid-1" style={{marginTop: '25px', marginLeft: 20}}>
+            <Cell col={1} style={{marginTop: -30}}>
+              <img src={athena} style={{width: '240%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
             </Cell>
+            <Cell col={3} offset={2} >
+              <div style={{color: "#575756" ,fontSize: 50,marginLeft: -70, marginTop: 10}}>Athena</div>
+              <div style={{color: "#575756" ,fontSize: 25,marginLeft: -70, marginTop: 10}}>Intellectual Game</div>
+              <div style={{fontSize: 20,marginLeft: -70, marginTop: 15}}>created by Raffi Dilanchian</div>
+              <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>https://github.com/raffidil</div>
+            </Cell>
+            <Cell col={1} offset={5} style={{marginTop: 130}}>
+              <IconButton name="info_outline" colored style={{color: 'teal'}} onClick={this.gotoAbout}/>
+            </Cell>
+
           </Grid>
       </Layout>
     );
