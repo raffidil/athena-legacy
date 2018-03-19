@@ -16,6 +16,24 @@ const Lists = [
       {
         text: 'test4',
       },
+      {
+        text: 'test5',
+      },
+      {
+        text: 'test6',
+      },
+      {
+        text:  'test7',
+      },
+      {
+        text: 'test8',
+      },
+      {
+        text: 'test9',
+      },
+      {
+        text: 'test10',
+      },
     ],
   },
   {
@@ -29,7 +47,6 @@ const Lists = [
     },
     {
       text:  'test7',
-      fontSize: '25px',
     },
     {
       text: 'test8',
@@ -47,7 +64,6 @@ list: [
   },
   {
     text:  'test7',
-    fontSize: '25px',
   },
   {
     text: 'test8',
@@ -65,7 +81,6 @@ list: [
   },
   {
     text:  'test7',
-    fontSize: '25px',
   },
   {
     text: 'test8',

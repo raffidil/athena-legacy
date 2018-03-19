@@ -21,7 +21,7 @@ class WordPage extends React.Component {
   }
 
   componentWillMount() {
-    document.body.style.backgroundColor = '#AA0000';
+    document.body.style.backgroundColor = '#ffffff';
     const id = parseInt(this.props.route.params.id, 10)-1;
     this.list = lists[id];
 
@@ -41,9 +41,15 @@ class WordPage extends React.Component {
   }
 
   makeSeen = (number) => {
-    const seen = this.state.seen;
-    seen[number] = true;
-    this.setState({ seen });
+    let seen = this.state.seen;
+    if(seen[number] == false){
+      seen[number] = true;
+      this.setState({ seen });
+    }
+    else{
+      seen[number] = !seen[number];
+      this.setState({ seen });
+    }
 
     db.setItem('wordCard'+this.list.id, this.state)
     .catch((err) => {
@@ -55,20 +61,24 @@ class WordPage extends React.Component {
     return (
       <Layout className={s.content}>
         <h1 className={s.fontstyle1} style={{
-          marginTop: '-3px'
-        }}><Grid className="demo-grid-1" style={{
-          marginTop: '20px'
-        }}>
+          marginTop: '-50px'
+        }}><Grid className="demo-grid-1">
           <Cell col={1}>
             <IconButton name="arrow_back" style={{ color: '#263238'}}colored onClick={this.gotoPhysical}/>
           </Cell>
             </Grid>
        </h1>
-       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-       {this.list && this.list.list.map((text , index)=> (
-         <QSquare isWord itemtext={text.text} backitemtext={text.text} key={index} onClick={() => this.makeSeen(index)} seen={this.state.seen[index]} style={{marginTop: '10px'}}/>
-       ))}
-     </div>
+       <Grid className="demo-grid-1"style={{
+         marginTop: '-60px'}}>
+         <Cell col={6}>
+           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+           {this.list && this.list.list.map((text , index)=> (
+             <QSquare isWord itemtext={text.text} backitemtext={text.text} key={index} onClick={() => this.makeSeen(index)} seen={this.state.seen[index]} style={{marginTop: '10px'}}/>
+           ))}
+         </div>
+         </Cell>
+           </Grid>
+
 
       </Layout>
     );

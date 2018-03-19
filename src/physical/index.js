@@ -30,7 +30,7 @@ class AboutPage extends React.Component {
   }
 
   componentWillMount() {
-    document.body.style.backgroundColor = '#AA0000';
+    document.body.style.backgroundColor = '#ffffff';
   }
   componentDidMount() {
     document.title = 'Ֆիզիկական';

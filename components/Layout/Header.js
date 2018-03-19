@@ -12,7 +12,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import Link from '../Link';
 import s from './Header.css';
-import logo from './logo.png';
+import logo from './mainlogo.png';
 
 
 class Header extends React.Component {

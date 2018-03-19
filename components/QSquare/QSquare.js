@@ -38,6 +38,8 @@ class QButton extends React.Component {
         color = '#0097A7';
       }
       text = this.props.backitemtext;
+    }else{
+        color = '#37474F';
     }
 
     return (

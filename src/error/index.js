@@ -55,7 +55,7 @@ class ErrorPage extends React.Component {
           </h1>
           <br /><br />
           <p className={s.text}>
-              <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A'}} name="arrow_back" />
+              <IconButton onClick={this.goBack} ripple style={{ fontSize: '45px', color: '#546E7A'}} name="arrow_back" />
               <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A'}} name="home" />
           </p>
         </main>
