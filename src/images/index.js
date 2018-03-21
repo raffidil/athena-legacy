@@ -67,9 +67,7 @@ class AboutPage extends React.Component {
           fontSize: '30px',
           marginLeft: '100px',
         }}>
-        <Grid className="demo-grid-1" style={{
-          marginTop: '10px'
-        }}>
+        <Grid className="demo-grid-1">
           <Cell col={2}>
             <QButton text="1" onClick={() => this.makeSeen(1)} goto="/images/0" seen={this.state.seen[1]}/>
           </Cell>
@@ -86,9 +84,7 @@ class AboutPage extends React.Component {
             <QButton text="5" onClick={() => this.makeSeen(5)} goto="/images/4" seen={this.state.seen[5]}/>
           </Cell>
         </Grid>
-        <Grid className="demo-grid-1" style={{
-          marginTop: '25px'
-        }}>
+        <Grid className="demo-grid-1">
         <Cell col={2}>
             <QButton text="6" onClick={() => this.makeSeen(6)} goto="/images/5" seen={this.state.seen[6]}/>
         </Cell>
@@ -104,9 +100,7 @@ class AboutPage extends React.Component {
           <Cell col={2}>
             <QButton text="10" onClick={() => this.makeSeen(10)} goto="/images/9" seen={this.state.seen[10]}/>
           </Cell></Grid>
-          <Grid className="demo-grid-1" style={{
-            marginTop: '25px'
-          }}>
+          <Grid className="demo-grid-1">
           <Cell col={2}>
             <QButton text="11" onClick={() => this.makeSeen(11)} goto="/images/10" seen={this.state.seen[11]}/>
           </Cell>
@@ -124,9 +118,7 @@ class AboutPage extends React.Component {
           </Cell>
               </Grid>
 
-              <Grid className="demo-grid-1" style={{
-                marginTop: '25px'
-              }}>
+              <Grid className="demo-grid-1">
               <Cell col={2}>
                 <QButton text="16" onClick={() => this.makeSeen(16)} goto="/images/15" seen={this.state.seen[16]}/>
               </Cell>
@@ -143,6 +135,24 @@ class AboutPage extends React.Component {
                 <QButton text="20" onClick={() => this.makeSeen(20)} goto="/images/19" seen={this.state.seen[20]}/>
               </Cell>
                   </Grid>
+                  <Grid className="demo-grid-1">
+                  <Cell col={2}>
+                    <QButton text="21" onClick={() => this.makeSeen(21)} goto="/images/20" seen={this.state.seen[21]}/>
+                  </Cell>
+                  <Cell col={2}>
+                    <QButton text="22" onClick={() => this.makeSeen(22)} goto="/images/21" seen={this.state.seen[22]}/>
+                  </Cell>
+                  <Cell col={2}>
+                    <QButton text="23" onClick={() => this.makeSeen(23)} goto="/images/22" seen={this.state.seen[23]}/>
+                  </Cell>
+                  <Cell col={2}>
+                    <QButton text="24" onClick={() => this.makeSeen(24)} goto="/images/23" seen={this.state.seen[24]}/>
+                  </Cell>
+                  <Cell col={2}>
+                    <QButton text="25" onClick={() => this.makeSeen(25)} goto="/images/24" seen={this.state.seen[25]}/>
+                  </Cell>
+                      </Grid>
+
         </div>
       </Layout>
     );
