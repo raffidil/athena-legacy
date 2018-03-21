@@ -2,438 +2,1254 @@
 const Questions = [
   {
     id: 'Գ1',
-    text: 'ի՞նչ նիւթ են պարունակում  թռչունի փետուրները:',
+    text: 'Ի՞նչ  են  նշանակում՝ It costs arms and legs',
     answers: [
       {
-        text: 'կրեատին',
+        text: 'սուղ (շատ թանկ)',
         correct: true,
       }, {
-        text: 'Կալցիոմ',
+        text: 'էժան',
         correct: false,
       }, {
-        text: 'Սննդաթելիկներ (Ֆիբր)',
+        text: 'ընկերանալ',
         correct: false,
-        fontSize: '25px',
+        //fontSize: '25px',
       }, {
-        text: 'Դոնդող (Ժելատին)',
+        text: 'խաշ ուտել',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ2',
-    text: 'Ի՞ նչ անունով է յայտնի  Շւեցարիան:',
+    text: 'Ի՞նչ  են  նշանակում՝  Hit the book',
     answers: [
       {
-        text: 'Ժամացոյցի երկիր',
+        text: 'դաս  պարապել',
         correct: true,
       }, {
-        text: 'Հազար կղզի',
+        text: 'գիրքը պատռել',
         correct: false,
       }, {
-        text: 'դրախտի երկիր',
+        text: 'գրքով ծեծել',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Արծաթի երկիր',
+        text: 'դաս չը պարապել',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ3',
-    text: 'Ո՞ր երկրից է ծագել երաժշտութիւնը:',
+    text: 'Ի՞նչ  են  նշանակում՝ He is made of mony',
     answers: [
       {
-        text: 'Չինաստան',
+        text: 'մեծահարուստ',
         correct: true,
       }, {
-        text: 'Հայաստան',
+        text: 'դրամասէր',
         correct: false,
       }, {
-        text: 'Անգլիա',
+        text: 'աշխատասէր',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Ամերիկա',
+        text: 'հպարտ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ4',
-    text: 'Ո՞ւմ գրչին է պատկանում ՝ Երեք հրացանակիրներ վէպը:',
+    text: 'Ի՞նչ  են  նշանակում՝ When Pig flys',
     answers: [
       {
-        text: 'Ալեքսանդր Դիւմաի',
+        text: 'երբէք',
         correct: true,
       }, {
-        text: 'Քուբի Բրայանթի',
+        text: 'մորթած խոզ',
         correct: false,
       }, {
-        text: 'Վիկտոր Հոգոի',
+        text: 'խոզի բուդ',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Ալեքսանդր Մակեդոնացու',
+        text: 'օդաչու',
         correct: false,
-        fontSize: '28px',
       },
     ],
   },
   {
     id: 'Գ5',
-    text: 'Աշխարահռչակ ո՞ր երաժիշտ եւ երգահան էր խլականջ:',
+    text: 'Ի՞նչ  են  նշանակում՝ fat chance',
     answers: [
       {
-        text: 'Բեթհովեն',
+        text: 'հնարաւոր չէ',
         correct: true,
       }, {
-        text: 'Բախ',
+        text: 'մեծ բախտ ունեցող',
         correct: false,
       }, {
-        text: 'Կոմիտաս',
+        text: 'գեր',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Եաննի',
+        text: 'հնարաւորութիւն',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ6',
-    text: 'Ի՞նչ անւանակոչում ունի Արգենտինա երկիրը:',
+    text: 'Ի՞նչ է կոչւում  առաջին գունաւոր  մուլտ ֆիլմը։',
     answers: [
       {
-        text: 'Արծաթի երկիր',
+        text: 'Սպիտակաձյունիկը և 7 թզուկները',
         correct: true,
       }, {
-        text: 'Ոսկու հանք',
+        text: 'Միկի Մաուս',
         correct: false,
       }, {
-        text: 'Սոված երկիր',
+        text: 'Փոքրիկ Բոսը',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Կապոյտ երկիր',
+        text: 'Թոմն ու Ջերին',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ7',
-    text: 'Ո՞վ է յայտնաբերել Ռադիոմ քիմիական տարը:',
+    text: 'Ինչպէս   է  գրւում համաշխարհային  Հիգիենայի  (بهداشت جهانی) համառօտագրութիւնը:',
     answers: [
       {
-        text: 'Մարի Կիւրի',
+        text: 'WHO',
         correct: true,
       }, {
-        text: 'Մրայա Քերի',
+        text: 'WTO',
         correct: false,
       }, {
-        text: 'Կատրին Կոլման',
+        text: 'IMF',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Մարիա  Թելկես',
+        text: 'ECO',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ8',
-    text: 'Ո՞րն է Ասիայի ամենաթանկ քաղաքը:',
+    text: 'Ո՞ր  երկիրն է  համարւում  ամենաշատ   ըմպելիքներ  արտադրղ երկիրը :',
     answers: [
       {
-        text: 'Տոկիօն',
+        text: 'Ամերիկա',
         correct: true,
       }, {
-        text: 'Չելսին',
+        text: 'Չինաստան',
         correct: false,
       }, {
-        text: 'Մոսկւան',
+        text: 'Հայաստան',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Սիդնէյը',
+        text: 'Ռուսաստան',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ9',
-    text: 'Ո՞րն է աշխարհի ամենաերկար գետը:',
+    text: 'Ո՞ր քաղաքն է Աւստրալիայի մայրաքաղաքը:',
     answers: [
       {
-        text: 'Նեղոս (Նիլ)',
+        text: 'Կանբերրա',
         correct: true,
       }, {
-        text: 'Ամազոն',
+        text: 'Լոնդոն',
         correct: false,
       }, {
-        text: 'Եփրատ',
+        text: 'Սիդնէյ',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Միսիսիպի',
+        text: 'Մելբորն',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ10',
-    text: 'Ի՞նչ է կոչւում Բելառուսի դրամական միաւորը:',
+    text: 'Ո՞ր քաղաքն է   կանադայի մայրաքաղաքը:',
     answers: [
       {
-        text: 'Ռուբլի',
+        text: 'Օթաւա',
         correct: true,
       }, {
-        text: 'Եւրօ',
+        text: 'Տորենտօ',
         correct: false,
       }, {
-        text: 'Լիրա',
+        text: 'Ալասկա',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Դրախմա',
+        text: 'Վանկովեր',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ11',
-    text: 'Ո՞ր երկրում չկայ պետական կինոթատրոն:',
+    text: 'Ո՞ր Օվկիանոսում են գտնւում  Հաւայի կղզիները:',
     answers: [
       {
-        text: 'Սաուդիան Արաբիա',
+        text: 'Խաղաղ օվկիանոսում',
         correct: true,
       }, {
-        text: 'Մակեդոնիա',
+        text: 'Ատլանտիկ  օվկիանոսում',
         correct: false,
       }, {
-        text: 'Ամերիկա',
+        text: 'Հնդկական',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Վրաստան',
+        text: 'Հիւսիսային սառցեալ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ12',
-    text: 'Ո՞րն է խաղաղութեան խորհրդանիշ ծառը:',
+    text: 'Ո՞ր տեղ է գտնւում  ժամացոյցի ամենամեծ բուրգը :',
     answers: [
       {
-        text: 'Ձիթենի',
+        text: 'Անգլիա յում',
         correct: true,
       }, {
-        text: 'Սոճի',
+        text: 'Սինգապուրում',
         correct: false,
       }, {
-        text: 'Ուռենի',
+        text: 'Ամերիկայում',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Բոնսայ',
+        text: 'Բարզիլիաում',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ13',
-    text: 'Մարդու աչքի ոսպնեակը քանի մեգափիկսել է:',
+    text: 'ի՞նչ է կոչւում Եկիպտոսի դրամը:',
     answers: [
       {
-        text: '576',
+        text: 'փոնդ',
         correct: true,
       }, {
-        text: '1024',
+        text: 'դոլար',
         correct: false,
       }, {
-        text: '124',
+        text: 'Եկիպտոսի դոլար',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: '1,000,000',
+        text: 'դերհամ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ14',
-    text: 'Օլիմպիական խաղերում քանի՞ մեդալ է շահել Ամերիկացի լեգենդար լողորդ՝ Մայքլ Ֆելփսը:',
+    text: 'Ո՞րն է տիեզերք  առաքւած առաջին ըմպելիք:',
     answers: [
       {
-        text: '23',
+        text: 'Կոկակոլա',
         correct: true,
       }, {
-        text: '18',
+        text: 'Փեփսի',
         correct: false,
       }, {
-        text: '8',
+        text: 'Վոտքա',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: '14',
+        text: 'Ռեդ բուլ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ15',
-    text: 'Սեղանի թենիսի գնդակի քաշը քանի՞ գրամ է:',
+    text: 'Ո՞ր երկրի արտադրանքն է եղել՝  առաջին գունաւոր հեռուստացոյցը :',
     answers: [
       {
-        text: '2.72',
+        text: 'Ամերիկաի',
         correct: true,
       }, {
-        text: '1',
+        text: 'Ճապոնիայի',
         correct: false,
       }, {
-        text: '2.50',
+        text: 'Կորիայի',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: '4',
+        text: 'Գերմանիայի',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ16',
-    text: 'Ի՞նչէ կոչւում միջազգային օլիմպիական կոմիտէն:',
+    text: 'Ո՞վ է առաջին տիեզերագնացը:',
     answers: [
       {
-        text: 'I.O.C',
+        text: 'Հիւրի Գագարի',
         correct: true,
       }, {
-        text: 'I.A.A.F.',
+        text: 'Ադամ Սմիթը',
         correct: false,
       }, {
-        text: 'I.J.F.',
+        text: 'Արմստրանգը',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'I.S.F.',
+        text: 'Մաթ Սմիթ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ17',
-    text: 'Հայ Առաքելական Եկեղեցու Սուրբ խորհուրդները Քանի՞սն են:',
+    text: 'Ի՞նչ է կոչւում CPU-ի արագութեան չափման միաւորը:',
     answers: [
       {
-        text: '7',
+        text: 'Հերթզ',
         correct: true,
       }, {
-        text: '9',
+        text: 'Բայթ',
         correct: false,
       }, {
-        text: '5',
+        text: 'Վաթ',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: '12',
+        text: 'Օհմ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ18',
-    text: 'Հայ Առաքելական Եկեղեցում Կատարւող, Խաւարման Կարգը Խորհրդանշում է՝',
-    fontSize: '40px',
+    text: 'Հետեւեալ ծրագրերից ո՞ր մէկը  չի պականում Office -ին։',
     answers: [
       {
-        text: 'Քրիստոսի Խաչելութիւնը',
+        text: 'internet explorer',
         correct: true,
-        fontSize: '27px',
       }, {
-        text: 'Գէթսեմանիում Քրիստոսի վերջին աղօթքը',
+        text: 'Access',
         correct: false,
-        fontSize: '27px',
       }, {
-        text: 'Քրիստոսի մահը և թաղումը',
+        text: 'Exel',
         correct: false,
-        fontSize: '27px',
+        //fontSize: '25px',
       }, {
-        text: 'Վերջին ընթրիք',
+        text: 'Word',
         correct: false,
-        fontSize: '27px',
       },
     ],
   },
   {
     id: 'Գ19',
-    text: 'Եկեղեցում Մէկ օրւան ընթացքում տարբեր ժամերին կատարւող հասարակաց աղօթքը կոչւում է՝',
+    text: 'Չինաստանի ազգաբնակչութեան թիւը քանի՞ է :',
     answers: [
       {
-        text: 'Ժամերգութիւն',
+        text: '1/3- միլիարդ',
         correct: true,
-        fontSize: '27px',
       }, {
-        text: 'Հաղորդութիւն',
-        correct: false,
-        fontSize: '27px',
-      }, {
-        text: 'Աղօթք',
+        text: '1- միլիարդ',
         correct: false,
       }, {
-        text: 'Պատարագ',
+        text: '80- միլիոն',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: '7- միլիարդ',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ20',
-    text: 'Քանի՞ րոպէանոց խաղամասերից է բաղկացած հանդբոլ մարզաձեւը:',
+    text: 'Մարմնի ,ո՞ր հատւածն է ապահովում արիւնը:',
     answers: [
       {
-        text: '2x30',
+        text: 'ոսկրածուծը',
         correct: true,
       }, {
-        text: '2x40',
+        text: 'ուղեղը',
         correct: false,
       }, {
-        text: '2x20',
+        text: 'սիրտը',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: '2x15',
+        text: 'եռիկամը',
         correct: false,
       },
     ],
   },
   {
     id: 'Գ21',
-    text: 'Ի՞նչ է նշանակում «Pull up stakes»:',
+    text: 'Աչքի բիբը (مردمک) Լոյսի դիմաց ի՞նչ փոփոխութեան է ենթարկւում:',
     answers: [
       {
-        text: 'Տեղափոխւել',
+        text: 'հաւաքւում է',
         correct: true,
-        fontSize: '27px',
       }, {
-        text: 'Հրիր սթէյքը',
+        text: 'լայնանում է',
         correct: false,
       }, {
-        text: 'Սթէյքը ուտել',
+        text: 'բոլորովին փակւում է',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Ուշադրութիւն դարձնել',
+        text: 'փոփոխութեան չի ենթարկւում',
         correct: false,
-        fontSize: '27px',
       },
     ],
   },
   {
-    id: 'Գ21',
-    text: 'Ի՞նչ է նշանակում «Dollar for dollar»:',
+    id: 'Գ22',
+    text: 'Մազերի կառուցւածքի ամենաշատ մասը, Ի՞նչ սննդանիւթից է կազմւած:',
     answers: [
       {
-        text: 'Փողտ իզուր մի ծախսիր',
+        text: 'սպիտակոյցից (پروتین)',
         correct: true,
       }, {
-        text: 'Փողին փող չի ասում',
+        text: 'կալցիոմից',
         correct: false,
       }, {
-        text: 'Փողոտ մարդ',
+        text: 'մանեզիոմից',
         correct: false,
+        //fontSize: '25px',
       }, {
-        text: 'Փող, փողի համար',
+        text: 'վիտամիններից',
         correct: false,
       },
     ],
   },
+  {
+    id: 'Գ23',
+    text: 'Ի՞նչ գոյնի է ծովի Մարախի (Մէյգուի) արիւնը:',
+    answers: [
+      {
+        text: 'կապոյտ',
+        correct: true,
+      }, {
+        text: 'կարմիր',
+        correct: false,
+      }, {
+        text: 'դեղին',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: 'սեւ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ24',
+    text: 'Ջուրը գլխուղեղի քանի՞ տոկոսն է կազմում։',
+    answers: [
+      {
+        text: '79',
+        correct: true,
+      }, {
+        text: '30',
+        correct: false,
+      }, {
+        text: '5',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: '50',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ25',
+    text: 'Ո՞ր կենդանին  է,որ զուրկ է ձայնալարերից:',
+    answers: [
+      {
+        text: 'ընձուխտ',
+        correct: true,
+      }, {
+        text: 'դելֆին',
+        correct: false,
+      }, {
+        text: 'մրջիւն',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: 'չղչիկ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ26',
+    text: 'Կենդանի ,որի  սիրտը գտնւում է գլխում:',
+    answers: [
+      {
+        text: 'մէյգու',
+        correct: true,
+      }, {
+        text: 'մրջիւն',
+        correct: false,
+      }, {
+        text: 'օձ',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: 'ընձուխտ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ27',
+    text: 'ի՞նչէ կոչւում արեան շաքարը:',
+    answers: [
+      {
+        text: 'գլուկոզ',
+        correct: true,
+      }, {
+        text: 'սելոլոզ',
+        correct: false,
+      }, {
+        text: 'լակթոզ',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: 'գլութեն',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ28',
+    text: 'Այս վիտամինի պակասը , ոսկրացաւի պատճառ է դառնում:',
+    answers: [
+      {
+        text: 'D',
+        correct: true,
+      }, {
+        text: 'B2',
+        correct: false,
+      }, {
+        text: 'C',
+        correct: false,
+        //fontSize: '25px',
+      }, {
+        text: 'A',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ29',
+    text: 'Ո՞ւմ գրչին է պատկանում ՝ Երեք հրացանակիրներ վէպը:',
+      answers: [
+        {
+          text: 'Ալեքսանդր Դիւմաի',
+          correct: true,
+        }, {
+          text: 'Քուբի Բրայանթի',
+          correct: false,
+        }, {
+          text: 'Վիկտոր Հոգոի',
+          correct: false,
+        }, {
+          text: 'Ալեքսանդր Մակեդոնացու',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ30',
+    text: 'Ի՞նչ անւանակոչում ունի Արգենտինա երկիրը:',
+      answers: [
+        {
+          text: 'Արծաթի երկիր',
+          correct: true,
+        }, {
+          text: 'Ոսկու հանք',
+          correct: false,
+        }, {
+          text: 'Սոված երկիր',
+          correct: false,
+        }, {
+          text: 'Կապոյտ երկիր',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ31',
+    text: 'Ո՞րն է խաղաղութեան խորհրդանիշ ծառը:',
+      answers: [
+        {
+          text: 'Ձիթենի',
+          correct: true,
+        }, {
+          text: 'Սոճի',
+          correct: false,
+        }, {
+          text: 'Ուռենի',
+          correct: false,
+        }, {
+          text: 'Բոնսայ',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ32',
+    text: 'Ո՞ւմ գրչին է պատկանում «Սպանւած աղաւնի» վէպը:',
+      answers: [
+        {
+          text: 'Նարդոսի',
+          correct: true,
+        }, {
+          text: 'Գէորգ Էմինի',
+          correct: false,
+        }, {
+          text: 'Աւետիս Ահարոնեանի',
+          correct: false,
+          fontSize: '30px',
+        }, {
+          text: 'Չարենցի',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ33',
+    text: 'Ո՞ր երկրի դրոշն է, որ ուղղանկիւն չէ:',
+      answers: [
+        {
+          text: 'Նեպալի',
+          correct: true,
+        }, {
+          text: 'Կրովասիի',
+          correct: false,
+        }, {
+          text: 'Անգլիաի',
+          correct: false,
+        }, {
+          text: 'Սերբիայի',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ34',
+    text: 'Մէկ մայլը, քանի՞ կիլոմետր է:',
+      answers: [
+        {
+          text: '1.906',
+          correct: false,
+        }, {
+          text: '1.960',
+          correct: false,
+        }, {
+          text: '1.609',
+          correct: true,
+        }, {
+          text: '1.690',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ35',
+    text: 'Ո՞րն է ամենաշատ վիտամին C պարունակող միրգը:',
+    answers: [
+      {
+        text: 'Կիվին',
+        correct: true,
+      }, {
+        text: 'Նարինջը',
+        correct: false,
+      }, {
+        text: 'Խնձորը',
+        correct: false,
+      }, {
+        text: 'Կիտրոնը',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ36',
+    text: 'Ո՞վ է Լեռնային Ղարաբաղի Հանրապետութեան նախագահը:',
+      answers: [
+        {
+          text: 'Բակօ Սահակեան',
+          correct: true,
+        }, {
+          text: 'Վարդան Արամեան',
+          correct: false,
+        }, {
+          text: 'Լեւոն Մկրտչեան',
+          correct: false,
+        }, {
+          text: 'Սպարտակ Թորոսեան',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ37',
+    text: 'Հայկական բանակի կազմաւորման օրն է',
+      answers: [
+        {
+          text: 'Յունւարի 28',
+          correct: true,
+        }, {
+          text: 'Փետրւարի  18',
+          correct: false,
+          fontSize: '29px',
+        }, {
+          text: 'Փետրւարի 28',
+          correct: false,
+        }, {
+          text: 'Յունւարի 18',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ38',
+    text: 'Ու՞մ է պատկանում «Սամւել» վէպ։',
+      answers: [
+        {
+          text: 'Րաֆֆի',
+          correct: true,
+        }, {
+          text: 'Գ. Էմին',
+          correct: false,
+        }, {
+          text: 'Պ. Սևակ',
+          correct: false,
+        }, {
+          text: 'Ա. Իսահակեան',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ39',
+    text: 'Եկեղեցում Մէկ օրւան ընթացքում տարբեր ժամերին կատարւող հասարակաց աղօթքը կոչւում է՝',
+      answers: [
+        {
+          text: 'Ժամերգութիւն',
+          correct: true,
+          fontSize: '27px',
+        }, {
+          text: 'Հաղորդութիւն',
+          correct: false,
+          fontSize: '27px',
+        }, {
+          text: 'Աղօթք',
+          correct: false,
+        }, {
+          text: 'Պատարագ',
+          correct: false,
+      },
+    ],
+  },
+  {
+    id: 'Գ40',
+    text: '   ',
+    text: 'Շուշիի ազատագրման օրն է',
+    answers: [
+      {
+        text: 'Մայիսի 9',
+        correct: true,
+      }, {
+        text: 'Մարտի 2',
+        correct: false,
+      }, {
+        text: 'Մայիսի 5',
+        correct: false,
+      }, {
+        text: 'Մարտի 1',
+        correct: false,
+      },
+    ],
+  },
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
   //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  // {
+  //   id: 'Գ1',
+  //   text: 'ի՞նչ նիւթ են պարունակում  թռչունի փետուրները:',
+  //   answers: [
+  //     {
+  //       text: 'կրեատին',
+  //       correct: true,
+  //     }, {
+  //       text: 'Կալցիոմ',
+  //       correct: false,
+  //     }, {
+  //       text: 'Սննդաթելիկներ (Ֆիբր)',
+  //       correct: false,
+  //       fontSize: '25px',
+  //     }, {
+  //       text: 'Դոնդող (Ժելատին)',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ2',
+  //   text: 'Ի՞ նչ անունով է յայտնի  Շւեցարիան:',
+  //   answers: [
+  //     {
+  //       text: 'Ժամացոյցի երկիր',
+  //       correct: true,
+  //     }, {
+  //       text: 'Հազար կղզի',
+  //       correct: false,
+  //     }, {
+  //       text: 'դրախտի երկիր',
+  //       correct: false,
+  //     }, {
+  //       text: 'Արծաթի երկիր',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ3',
+  //   text: 'Ո՞ր երկրից է ծագել երաժշտութիւնը:',
+  //   answers: [
+  //     {
+  //       text: 'Չինաստան',
+  //       correct: true,
+  //     }, {
+  //       text: 'Հայաստան',
+  //       correct: false,
+  //     }, {
+  //       text: 'Անգլիա',
+  //       correct: false,
+  //     }, {
+  //       text: 'Ամերիկա',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ4',
+  //   text: 'Ո՞ւմ գրչին է պատկանում ՝ Երեք հրացանակիրներ վէպը:',
+  //   answers: [
+  //     {
+  //       text: 'Ալեքսանդր Դիւմաի',
+  //       correct: true,
+  //     }, {
+  //       text: 'Քուբի Բրայանթի',
+  //       correct: false,
+  //     }, {
+  //       text: 'Վիկտոր Հոգոի',
+  //       correct: false,
+  //     }, {
+  //       text: 'Ալեքսանդր Մակեդոնացու',
+  //       correct: false,
+  //       fontSize: '28px',
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ5',
+  //   text: 'Աշխարահռչակ ո՞ր երաժիշտ եւ երգահան էր խլականջ:',
+  //   answers: [
+  //     {
+  //       text: 'Բեթհովեն',
+  //       correct: true,
+  //     }, {
+  //       text: 'Բախ',
+  //       correct: false,
+  //     }, {
+  //       text: 'Կոմիտաս',
+  //       correct: false,
+  //     }, {
+  //       text: 'Եաննի',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ6',
+  //   text: 'Ի՞նչ անւանակոչում ունի Արգենտինա երկիրը:',
+  //   answers: [
+  //     {
+  //       text: 'Արծաթի երկիր',
+  //       correct: true,
+  //     }, {
+  //       text: 'Ոսկու հանք',
+  //       correct: false,
+  //     }, {
+  //       text: 'Սոված երկիր',
+  //       correct: false,
+  //     }, {
+  //       text: 'Կապոյտ երկիր',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ7',
+  //   text: 'Ո՞վ է յայտնաբերել Ռադիոմ քիմիական տարը:',
+  //   answers: [
+  //     {
+  //       text: 'Մարի Կիւրի',
+  //       correct: true,
+  //     }, {
+  //       text: 'Մրայա Քերի',
+  //       correct: false,
+  //     }, {
+  //       text: 'Կատրին Կոլման',
+  //       correct: false,
+  //     }, {
+  //       text: 'Մարիա  Թելկես',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ8',
+  //   text: 'Ո՞րն է Ասիայի ամենաթանկ քաղաքը:',
+  //   answers: [
+  //     {
+  //       text: 'Տոկիօն',
+  //       correct: true,
+  //     }, {
+  //       text: 'Չելսին',
+  //       correct: false,
+  //     }, {
+  //       text: 'Մոսկւան',
+  //       correct: false,
+  //     }, {
+  //       text: 'Սիդնէյը',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ9',
+  //   text: 'Ո՞րն է աշխարհի ամենաերկար գետը:',
+  //   answers: [
+  //     {
+  //       text: 'Նեղոս (Նիլ)',
+  //       correct: true,
+  //     }, {
+  //       text: 'Ամազոն',
+  //       correct: false,
+  //     }, {
+  //       text: 'Եփրատ',
+  //       correct: false,
+  //     }, {
+  //       text: 'Միսիսիպի',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ10',
+  //   text: 'Ի՞նչ է կոչւում Բելառուսի դրամական միաւորը:',
+  //   answers: [
+  //     {
+  //       text: 'Ռուբլի',
+  //       correct: true,
+  //     }, {
+  //       text: 'Եւրօ',
+  //       correct: false,
+  //     }, {
+  //       text: 'Լիրա',
+  //       correct: false,
+  //     }, {
+  //       text: 'Դրախմա',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ11',
+  //   text: 'Ո՞ր երկրում չկայ պետական կինոթատրոն:',
+  //   answers: [
+  //     {
+  //       text: 'Սաուդիան Արաբիա',
+  //       correct: true,
+  //     }, {
+  //       text: 'Մակեդոնիա',
+  //       correct: false,
+  //     }, {
+  //       text: 'Ամերիկա',
+  //       correct: false,
+  //     }, {
+  //       text: 'Վրաստան',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ12',
+  //   text: 'Ո՞րն է խաղաղութեան խորհրդանիշ ծառը:',
+  //   answers: [
+  //     {
+  //       text: 'Ձիթենի',
+  //       correct: true,
+  //     }, {
+  //       text: 'Սոճի',
+  //       correct: false,
+  //     }, {
+  //       text: 'Ուռենի',
+  //       correct: false,
+  //     }, {
+  //       text: 'Բոնսայ',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ13',
+  //   text: 'Մարդու աչքի ոսպնեակը քանի մեգափիկսել է:',
+  //   answers: [
+  //     {
+  //       text: '576',
+  //       correct: true,
+  //     }, {
+  //       text: '1024',
+  //       correct: false,
+  //     }, {
+  //       text: '124',
+  //       correct: false,
+  //     }, {
+  //       text: '1,000,000',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ14',
+  //   text: 'Օլիմպիական խաղերում քանի՞ մեդալ է շահել Ամերիկացի լեգենդար լողորդ՝ Մայքլ Ֆելփսը:',
+  //   answers: [
+  //     {
+  //       text: '23',
+  //       correct: true,
+  //     }, {
+  //       text: '18',
+  //       correct: false,
+  //     }, {
+  //       text: '8',
+  //       correct: false,
+  //     }, {
+  //       text: '14',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ15',
+  //   text: 'Սեղանի թենիսի գնդակի քաշը քանի՞ գրամ է:',
+  //   answers: [
+  //     {
+  //       text: '2.72',
+  //       correct: true,
+  //     }, {
+  //       text: '1',
+  //       correct: false,
+  //     }, {
+  //       text: '2.50',
+  //       correct: false,
+  //     }, {
+  //       text: '4',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ16',
+  //   text: 'Ի՞նչէ կոչւում միջազգային օլիմպիական կոմիտէն:',
+  //   answers: [
+  //     {
+  //       text: 'I.O.C',
+  //       correct: true,
+  //     }, {
+  //       text: 'I.A.A.F.',
+  //       correct: false,
+  //     }, {
+  //       text: 'I.J.F.',
+  //       correct: false,
+  //     }, {
+  //       text: 'I.S.F.',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ17',
+  //   text: 'Հայ Առաքելական Եկեղեցու Սուրբ խորհուրդները Քանի՞սն են:',
+  //   answers: [
+  //     {
+  //       text: '7',
+  //       correct: true,
+  //     }, {
+  //       text: '9',
+  //       correct: false,
+  //     }, {
+  //       text: '5',
+  //       correct: false,
+  //     }, {
+  //       text: '12',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ18',
+  //   text: 'Հայ Առաքելական Եկեղեցում Կատարւող, Խաւարման Կարգը Խորհրդանշում է՝',
+  //   fontSize: '40px',
+  //   answers: [
+  //     {
+  //       text: 'Քրիստոսի Խաչելութիւնը',
+  //       correct: true,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Գէթսեմանիում Քրիստոսի վերջին աղօթքը',
+  //       correct: false,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Քրիստոսի մահը և թաղումը',
+  //       correct: false,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Վերջին ընթրիք',
+  //       correct: false,
+  //       fontSize: '27px',
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ19',
+  //   text: 'Եկեղեցում Մէկ օրւան ընթացքում տարբեր ժամերին կատարւող հասարակաց աղօթքը կոչւում է՝',
+  //   answers: [
+  //     {
+  //       text: 'Ժամերգութիւն',
+  //       correct: true,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Հաղորդութիւն',
+  //       correct: false,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Աղօթք',
+  //       correct: false,
+  //     }, {
+  //       text: 'Պատարագ',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ20',
+  //   text: 'Քանի՞ րոպէանոց խաղամասերից է բաղկացած հանդբոլ մարզաձեւը:',
+  //   answers: [
+  //     {
+  //       text: '2x30',
+  //       correct: true,
+  //     }, {
+  //       text: '2x40',
+  //       correct: false,
+  //     }, {
+  //       text: '2x20',
+  //       correct: false,
+  //     }, {
+  //       text: '2x15',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ21',
+  //   text: 'Ի՞նչ է նշանակում «Pull up stakes»:',
+  //   answers: [
+  //     {
+  //       text: 'Տեղափոխւել',
+  //       correct: true,
+  //       fontSize: '27px',
+  //     }, {
+  //       text: 'Հրիր սթէյքը',
+  //       correct: false,
+  //     }, {
+  //       text: 'Սթէյքը ուտել',
+  //       correct: false,
+  //     }, {
+  //       text: 'Ուշադրութիւն դարձնել',
+  //       correct: false,
+  //       fontSize: '27px',
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 'Գ21',
+  //   text: 'Ի՞նչ է նշանակում «Dollar for dollar»:',
+  //   answers: [
+  //     {
+  //       text: 'Փողտ իզուր մի ծախսիր',
+  //       correct: true,
+  //     }, {
+  //       text: 'Փողին փող չի ասում',
+  //       correct: false,
+  //     }, {
+  //       text: 'Փողոտ մարդ',
+  //       correct: false,
+  //     }, {
+  //       text: 'Փող, փողի համար',
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  //
+  //
+  //
+  //
+  // //
   // {
   //   id: 'Գ14',
   //   text: 'Ո՞ւմ գրչին է պատկանում «Սպանւած աղաւնի» վէպը:',
@@ -762,7 +1578,7 @@ const Questions = [
   //     },
   //   ],
   // },
-  // {
+  // // {
   //   id: 'Գ31',
   //   text: 'Ո՞րն հունական դիցաբանութեան աստւածներից չէ։',
   //   answers: [
