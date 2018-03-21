@@ -146,8 +146,8 @@ const Questions = [
     questionPic: require('./files/24blur.jpg'),
   },
   {
-    name: 'Jean',
-    lastName: 'Reno',
+    name: 'Ժան',
+    lastName: 'Ռենո',
     answerPic: require('./files/25.jpg'),
     questionPic: require('./files/25blur.jpg'),
   },

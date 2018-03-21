@@ -91,7 +91,7 @@ export default class Question extends React.Component {
            </Cell>
            <Cell col={1} style={{marginTop: '-5px',marginLeft: '65px'}}>
              <Card shadow={2} style={{
-               width: (this.state.scores[team.id] || 0)*7.2,
+               width: (this.state.scores[team.id] || 0)*6.7,
                minHeight: '20px',
                backgroundColor: team.backColor,
                marginLeft: '20px'
@@ -111,7 +111,8 @@ export default class Question extends React.Component {
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 15}}>created by Raffi Dilanchian</div>
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>https://github.com/raffidil</div>
             </Cell>
-            <Cell col={1} offset={5} style={{marginTop: 110}}>
+            <Cell col={1} offset={1}><div>shnorhakalutioon</div></Cell>
+            <Cell col={1} offset={3} style={{marginTop: 110}}>
               <IconButton name="info_outline" colored style={{color: 'teal'}} onClick={this.gotoAbout}/>
             </Cell>
 

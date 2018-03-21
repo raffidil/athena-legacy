@@ -133,7 +133,7 @@ const Questions = [
       }, {
         text: 'Ֆրանսիացիներ',
         correct: false,
-        //fontSize: '25px',
+        fontSize: '25px',
       }, {
         text: 'Վագրեր',
         correct: false,
@@ -185,8 +185,9 @@ const Questions = [
     text: 'Փարալելը , մարզական  ի՞նչ ճիւղի պիտոյք է:',
     answers: [
       {
-        text: 'մարմնամարզութիւն',
+        text: 'մարմնա- մարզութիւն',
         correct: true,
+        //fontSize: '22px',
       }, {
         text: 'դարթ',
         correct: false,
@@ -335,7 +336,7 @@ const Questions = [
         correct: false,
         //fontSize: '25px',
       }, {
-        text: 'Աֆղանստան-Իսրայէլ',
+        text: 'Աֆղանստան -Իսրայէլ',
         correct: false,
       },
     ],
@@ -355,7 +356,7 @@ const Questions = [
         correct: false,
         //fontSize: '25px',
       }, {
-        text: 'Դյւիդ Շաթը',
+        text: 'Դէյւիդ Շաթը',
         correct: false,
       },
     ],
@@ -390,6 +391,7 @@ const Questions = [
       }, {
         text: 'ծանրամարտ',
         correct: false,
+        fontSize: '28px',
       }, {
         text: 'թեթեւ ատլետ',
         correct: false,
@@ -467,9 +469,11 @@ const Questions = [
       {
         text: 'Բրազիլիաում',
         correct: true,
+        fontSize: '27px',
       }, {
         text: 'Գերմանիաում',
         correct: false,
+        fontSize: '27px',
       }, {
         text: 'Հարաւային Կորէայում',
         correct: false,
@@ -531,9 +535,9 @@ const Questions = [
         text: 'ֆուտբոլ',
         correct: false,
       }, {
-        text: 'մարմնամարզութիւն',
+        text: 'մարմնա- մարզութիւն',
         correct: false,
-        //fontSize: '25px',
+        ծծfontSize: '22px',
       }, {
         text: 'թեթևատլետ',
         correct: false,
@@ -575,8 +579,9 @@ const Questions = [
         correct: false,
         //fontSize: '25px',
       }, {
-        text: 'մարմնամարզութիւնում',
+        text: 'մարմնա- մարզութիւնում',
         correct: false,
+        fontSize: '27px',
       },
     ],
   },

@@ -70,7 +70,7 @@ class WordPage extends React.Component {
        </h1>
        <Grid className="demo-grid-1">
          <Cell col={6}>
-           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '-65px'}}>
+           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '-85px'}}>
            {this.list && this.list.list.map((text , index)=> (
              <QSquare isWord itemtext={text.text} backitemtext={text.text} key={index} onClick={() => this.makeSeen(index)} seen={this.state.seen[index]} style={{marginTop: '10px'}}/>
            ))}

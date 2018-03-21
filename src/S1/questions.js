@@ -5,7 +5,7 @@ const Questions = [
     text: 'Ի՞նչ  են  նշանակում՝ It costs arms and legs',
     answers: [
       {
-        text: 'սուղ (շատ թանկ)',
+        text: 'շատ թանկ',
         correct: true,
       }, {
         text: 'էժան',
@@ -47,13 +47,14 @@ const Questions = [
       {
         text: 'մեծահարուստ',
         correct: true,
+        fontSize: '27px',
       }, {
         text: 'դրամասէր',
         correct: false,
       }, {
         text: 'աշխատասէր',
         correct: false,
-        //fontSize: '25px',
+        fontSize: '27px',
       }, {
         text: 'հպարտ',
         correct: false,
@@ -95,8 +96,9 @@ const Questions = [
         correct: false,
         //fontSize: '25px',
       }, {
-        text: 'հնարաւորութիւն',
+        text: 'հնարա- ւորութիւն',
         correct: false,
+        ծծfontSize: '25px',
       },
     ],
   },
@@ -107,6 +109,7 @@ const Questions = [
       {
         text: 'Սպիտակաձյունիկը և 7 թզուկները',
         correct: true,
+        fontSize: '21px',
       }, {
         text: 'Միկի Մաուս',
         correct: false,
@@ -207,9 +210,11 @@ const Questions = [
       {
         text: 'Խաղաղ օվկիանոսում',
         correct: true,
+        fontSize: '27px',
       }, {
         text: 'Ատլանտիկ  օվկիանոսում',
         correct: false,
+        fontSize: '27px',
       }, {
         text: 'Հնդկական',
         correct: false,
@@ -225,11 +230,12 @@ const Questions = [
     text: 'Ո՞ր տեղ է գտնւում  ժամացոյցի ամենամեծ բուրգը :',
     answers: [
       {
-        text: 'Անգլիա յում',
+        text: 'Անգլիայում',
         correct: true,
       }, {
         text: 'Սինգապուրում',
         correct: false,
+        fontSize: '27px',
       }, {
         text: 'Ամերիկայում',
         correct: false,
@@ -237,6 +243,7 @@ const Questions = [
       }, {
         text: 'Բարզիլիաում',
         correct: false,
+        fontSize: '27px',
       },
     ],
   },
@@ -313,7 +320,7 @@ const Questions = [
       }, {
         text: 'Արմստրանգը',
         correct: false,
-        //fontSize: '25px',
+        fontSize: '28px',
       }, {
         text: 'Մաթ Սմիթ',
         correct: false,
@@ -345,7 +352,7 @@ const Questions = [
     text: 'Հետեւեալ ծրագրերից ո՞ր մէկը  չի պականում Office -ին։',
     answers: [
       {
-        text: 'internet explorer',
+        text: 'Internet Explorer',
         correct: true,
       }, {
         text: 'Access',
@@ -365,7 +372,7 @@ const Questions = [
     text: 'Չինաստանի ազգաբնակչութեան թիւը քանի՞ է :',
     answers: [
       {
-        text: '1/3- միլիարդ',
+        text: '1.3- միլիարդ',
         correct: true,
       }, {
         text: '1- միլիարդ',
@@ -417,6 +424,7 @@ const Questions = [
       }, {
         text: 'փոփոխութեան չի ենթարկւում',
         correct: false,
+        fontSize: '25px',
       },
     ],
   },
@@ -427,6 +435,7 @@ const Questions = [
       {
         text: 'սպիտակոյցից (پروتین)',
         correct: true,
+        fontSize: '28px',
       }, {
         text: 'կալցիոմից',
         correct: false,
@@ -437,6 +446,7 @@ const Questions = [
       }, {
         text: 'վիտամիններից',
         correct: false,
+        fontSize: '27px',
       },
     ],
   },
@@ -576,6 +586,7 @@ const Questions = [
         }, {
           text: 'Ալեքսանդր Մակեդոնացու',
           correct: false,
+          fontSize: '27px',
       },
     ],
   },
