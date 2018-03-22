@@ -37,7 +37,7 @@ import athena from './athena.png';
 export default class Question extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { scores: [] };
+    this.state = { scores: [], isVisible: false };
   }
   componentWillMount() {
     this.updateScores();
@@ -103,17 +103,18 @@ export default class Question extends React.Component {
           ))}
           <Grid className="demo-grid-1" style={{marginTop: '10px', marginLeft: 20}}>
             <Cell col={1} style={{marginTop: -30}}>
-              <img src={athena} style={{width: '240%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
+              <img src={athena} style={{width: '250%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
             </Cell>
-            <Cell col={3} offset={2} >
-              <div style={{color: "#575756" ,fontSize: 50,marginLeft: -70, marginTop: 10}}>Athena</div>
-              <div style={{color: "#575756" ,fontSize: 25,marginLeft: -70, marginTop: 10}}>Intellectual Game</div>
-              <div style={{fontSize: 20,marginLeft: -70, marginTop: 15}}>created by Raffi Dilanchian</div>
-              <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>https://github.com/raffidil</div>
+            <Cell col={3} offset={2} style={{fontFamily: "Roboto"}} >
+              <div style={{color: "#575756" ,fontSize: 60,marginLeft: -70, marginTop: 10}}>Athena</div>
+              <div style={{color: "#575756" ,fontSize: 25,marginLeft: -70, marginTop: 12}}>Intellectual Game</div>
+              <div style={{ width: 200, height: 2,backgroundColor: "#575756",marginLeft: -70, marginTop: 10}}/>
+              <div style={{fontSize: 20,marginLeft: -70, marginTop: 10}}>created by Raffi Dilanchian</div>
+              <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>github.com/raffidil</div>
             </Cell>
-            <Cell col={1} offset={1}><div>shnorhakalutioon</div></Cell>
+            <Cell col={1} offset={1}><div style={{display: this.state.isVisible ? "flex" : "none"}}>shnorhakalutioon</div></Cell>
             <Cell col={1} offset={3} style={{marginTop: 110}}>
-              <IconButton name="info_outline" colored style={{color: 'teal'}} onClick={this.gotoAbout}/>
+              <IconButton name="info_outline" colored style={{color: '#575756'}} onClick={() => this.setState({ isVisible: !this.state.isVisible }) }/>
             </Cell>
 
           </Grid>

@@ -43,7 +43,7 @@ class QButton extends React.Component {
     }
 
     return (
-      <Button onClick={this.click} raised ripple colored style={{ backgroundColor: color, fontSize: '30px', color: '#fff', width: '250px', height: this.props.isWord ? '50px' : '90px', ...this.props.style}}>
+      <Button onClick={this.click} raised ripple colored style={{ backgroundColor: color, fontSize: '30px', color: '#fff', width: this.props.width ,height: this.props.isWord ? '50px' : '90px', ...this.props.style}}>
         {text}
       </Button>
     )

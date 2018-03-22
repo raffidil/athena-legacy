@@ -13,6 +13,9 @@ import BigTimer from '../../components/BigTimer';
 import ReactAudioPlayer from 'react-audio-player';
 import lists from './lists';
 import QSquare from '../../components/QSquare';
+import back1 from '../phys/back1.mp3';
+import back2 from '../phys/back2.mp3';
+import back3 from '../phys/back3.mp3';
 
 class WordPage extends React.Component {
   constructor(props) {
@@ -76,7 +79,10 @@ class WordPage extends React.Component {
            ))}
          </div>
          </Cell>
-         <Cell col={6}><BigTimer timeout={90}/></Cell>
+         <Cell col={6} style={{marginTop: -50}}>
+           <BigTimer timeout={90} />
+           <div ><ReactAudioPlayer src={back1} style={{marginLeft: 45}}/></div>
+       </Cell>
            </Grid>
 
 
