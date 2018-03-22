@@ -112,8 +112,11 @@ export default class Question extends React.Component {
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 10}}>created by Raffi Dilanchian</div>
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>github.com/raffidil</div>
             </Cell>
-            <Cell col={1} offset={1}><div style={{display: this.state.isVisible ? "flex" : "none"}}>shnorhakalutioon</div></Cell>
-            <Cell col={1} offset={3} style={{marginTop: 110}}>
+            <Cell col={3} offset={0}>
+              <div style={{marginTop:10,fontSize: 24, fontFamily: "Roboto",display: this.state.isVisible ? "contents" : "none"}}>
+
+              Շնորհակալութիւն օր. Երանուշ Թահմազեանից մեզ օժանդակելու համար։</div></Cell>
+            <Cell col={1} offset={2} style={{marginTop: 110}}>
               <IconButton name="info_outline" colored style={{color: '#575756'}} onClick={() => this.setState({ isVisible: !this.state.isVisible }) }/>
             </Cell>
 

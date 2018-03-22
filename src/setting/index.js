@@ -124,7 +124,7 @@ export default class Settings extends React.Component {
             <List>
               <ListItem><span style={{ fontSize: '25px' }}>Score Manual Setting</span></ListItem>
               {teams.map(team => (
-                <Card key={team.id} shadow={2} style={{ width: '280px', minHeight: '30px', margin: '-12px', marginLeft: '10px', marginTop: '15px' }}>
+                <Card key={team.id} shadow={2} style={{ width: '300px', minHeight: '30px', margin: '-12px', marginLeft: '10px', marginTop: '15px' }}>
                  <ListItem style={{ marginTop: '-8px' }}>
                    <span style={{ marginRight: '20px' }}>
                      <IconButton name="remove" onClick={() => this.dec(team)} colored style={{ color: 'red' }} />

@@ -59,7 +59,7 @@ class AboutPage extends React.Component {
           <Cell col={1}>
             <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoCategories}/>
           </Cell>
-          <Cell col={1}>Նկարներ</Cell>
+          <Cell col={1}>Պատկերներ</Cell>
             </Grid>
        </h1>
         <div style={{
