@@ -12,3 +12,8 @@ npm-debug.log
 
 # Firebase
 firebase-debug.log
+
+# Game heavy files, like musics and pictures folder
+src/M1/files
+src/P1/files
+

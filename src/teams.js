@@ -69,6 +69,13 @@ const Teams = [
   //   backColor: '#6D4C41',
   // },
   // //BACKUP COLOR
+  // {
+  //   //BROWN
+  //   id: 0,
+  //   name: 'Րաֆֆի',
+  //   color: '#D7CCC8',
+  //   backColor: '#6D4C41',
+  // },
   {
     // Heavy PINK
     id: 1,
@@ -114,7 +121,7 @@ const Teams = [
   {
     // YELLOW
     id: 7,
-    name: 'Շ.Շ. Արարատ',
+    name: 'Րաֆֆի',
     color: '#fff9c4',
     backColor: '#fbc02d',
   },
@@ -133,13 +140,7 @@ const Teams = [
     color: '#ffcdd2',
     backColor: '#e53935',
   },
-  // {
-  //   //BROWN
-  //   id: 10,
-  //   name: 'team8',
-  //   color: '#D7CCC8',
-  //   backColor: '#6D4C41',
-  // },
+
 
 ];
 

@@ -42,7 +42,7 @@ const Questions = [
   },
   {
     id: 'Գ3',
-    text: 'Ի՞նչ  են  նշանակում՝ He is made of mony',
+    text: 'Ի՞նչ  են  նշանակում՝ He is made of money',
     answers: [
       {
         text: 'մեծահարուստ',
@@ -358,7 +358,7 @@ const Questions = [
         text: 'Access',
         correct: false,
       }, {
-        text: 'Exel',
+        text: 'Excel',
         correct: false,
         //fontSize: '25px',
       }, {

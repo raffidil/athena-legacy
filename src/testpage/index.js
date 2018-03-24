@@ -12,7 +12,6 @@ import {
 } from 'react-mdl';
 import Layout from '../../components/Layout';
 import s from './styles.css';
-import Picture from './pic1.png';
 import Link from '../../components/Link';
 import history from '../history';
 
