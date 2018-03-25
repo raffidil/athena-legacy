@@ -1,0 +1,29 @@
+.row {
+  padding: 30px;
+}
+
+.title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  text-shadow: -2px 2px 5px #424242;
+  font-family: ArTarumianMatenagir;
+}
+
+  .header {
+    min-height: 61px;
+    display: flex;
+    background-color: #607D8B;
+  }
+
+  .row {
+    padding: 0 16px;
+  }
+
+  .logo {
+    position: absolute;
+  height: 63px;
+  width: 75px;
+  top: .1px;
+  color: red;
+  }
