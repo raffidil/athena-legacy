@@ -79,14 +79,14 @@ const Teams = [
   {
     // Heavy PINK
     id: 1,
-    name: 'Հ.Մ.Ա.Կ.',
+    name: 'Ա խումբ',
     color: '#f8bbd0',
     backColor: '#d81b60',
   },
   {
     // VIOLET
     id: 2,
-    name: 'Նայիրի',
+    name: 'Բ խումբ',
     color: '#e1bee7',
     backColor: '#8e24aa',
   },
@@ -100,7 +100,7 @@ const Teams = [
   {
     // BLUE SKY
     id: 4,
-    name: 'Ն.Ջ. Արարատ',
+    name: 'Գ խումբ',
     color: '#bbdefb',
     backColor: '#0277bd',
   },
@@ -114,32 +114,32 @@ const Teams = [
   {
     // PESTEI
     id: 6,
-    name: 'Թաւրիզ',
+    name: 'Դ խումբ',
     color: '#dcedc8',
     backColor: '#8bc34a',
   },
   {
     // YELLOW
     id: 7,
-    name: 'Րաֆֆի',
+    name: 'Ե խումբ',
     color: '#fff9c4',
     backColor: '#fbc02d',
   },
 
-  {
-    // ORANGE
-    id: 8,
-    name: 'Սարդարապատ',
-    color: '#ffe0b2',
-    backColor: '#fb8c00',
-  },
-  {
-    // RED
-    id: 9,
-    name: 'Հայաստան',
-    color: '#ffcdd2',
-    backColor: '#e53935',
-  },
+  // {
+  //   // ORANGE
+  //   id: 8,
+  //   name: 'Սարդարապատ',
+  //   color: '#ffe0b2',
+  //   backColor: '#fb8c00',
+  // },
+  // {
+  //   // RED
+  //   id: 9,
+  //   name: 'Հայաստան',
+  //   color: '#ffcdd2',
+  //   backColor: '#e53935',
+  // },
 
 
 ];

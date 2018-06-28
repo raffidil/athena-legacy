@@ -10,10 +10,11 @@
   font-family: ArTarumianMatenagir;
 }
 
+
   .header {
     min-height: 61px;
     display: flex;
-    background-color: #607D8B;
+    background-color: #bd0000;
   }
 
   .row {
@@ -23,7 +24,7 @@
   .logo {
     position: absolute;
   height: 63px;
-  width: 75px;
+  width: 57px;
   top: .1px;
-  color: red;
+  color: white;
   }

@@ -184,35 +184,6 @@ class AboutPage extends React.Component {
               </Cell>
           </Grid>
 
-          <Grid className="demo-grid-1" style={{
-            marginTop: '10px'
-          }}>
-            <Cell col={1} style={{marginLeft: 20}}>
-              <QButton text="33" onClick={() => this.makeSeen(33)} goto="/science/32" seen={this.state.seen[33]}/>
-            </Cell>
-            <Cell col={1} style={{marginLeft: 20}} style={{marginLeft: 20}}>
-              <QButton text="34" onClick={() => this.makeSeen(34)} goto="/science/33" seen={this.state.seen[34]}/>
-            </Cell>
-            <Cell col={1} style={{marginLeft: 20}}>
-              <QButton text="35" onClick={() => this.makeSeen(35)} goto="/science/34" seen={this.state.seen[35]}/>
-            </Cell>
-            <Cell col={1} style={{marginLeft: 20}}>
-              <QButton text="36" onClick={() => this.makeSeen(36)} goto="/science/35" seen={this.state.seen[36]}/>
-            </Cell>
-            <Cell col={1} style={{marginLeft: 20}}>
-              <QButton text="37" onClick={() => this.makeSeen(37)} goto="/science/36" seen={this.state.seen[37]}/>
-            </Cell>
-            <Cell col={1} style={{marginLeft: 20}}>
-              <QButton text="38" onClick={() => this.makeSeen(38)} goto="/science/37" seen={this.state.seen[38]}/>
-            </Cell>
-              <Cell col={1} style={{marginLeft: 20}}>
-                <QButton text="39" onClick={() => this.makeSeen(39)} goto="/science/38" seen={this.state.seen[39]}/>
-              </Cell>
-              <Cell col={1} style={{marginLeft: 20}}>
-                <QButton text="40" onClick={() => this.makeSeen(40)} goto="/science/39" seen={this.state.seen[40]}/>
-              </Cell>
-          </Grid>
-
 
         </div>
       </Layout>

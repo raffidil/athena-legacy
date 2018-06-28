@@ -105,7 +105,7 @@ class AboutPage extends React.Component {
             <QSquare width="250" itemtext="2" backitemtext="Գուշակիր բառը - A" onClick={() => this.makeSeen(2)} seen={this.state.seen[2]}/>
           </Cell>
           <Cell col={4}>
-            <QSquare width="250" itemtext="3" backitemtext="Գծագրիր բառը - 1" onClick={() => this.makeSeen(3)} seen={this.state.seen[3]}/>
+            <QSquare width="250" itemtext="3" backitemtext="Դառթ" onClick={() => this.makeSeen(3)} seen={this.state.seen[3]}/>
           </Cell>
         </Grid>
         <Grid className="demo-grid-1">
@@ -116,7 +116,7 @@ class AboutPage extends React.Component {
             <QSquare width="250" itemtext="5" backitemtext="Չարմատ - 2" onClick={() => this.makeSeen(5)} seen={this.state.seen[5]}/>
           </Cell>
           <Cell col={4}>
-            <QSquare width="250" itemtext="6" backitemtext="Գծագրիր բառը - 2" onClick={() => this.makeSeen(6)} seen={this.state.seen[6]}/>
+            <QSquare width="250" itemtext="6" backitemtext="կոն" onClick={() => this.makeSeen(6)} seen={this.state.seen[6]}/>
           </Cell>
         </Grid>
         <Grid className="demo-grid-1">
@@ -124,7 +124,7 @@ class AboutPage extends React.Component {
             <QSquare width="250" itemtext="7" backitemtext="Չարմատ - 3" onClick={() => this.makeSeen(7)} seen={this.state.seen[7]}/>
           </Cell>
           <Cell col={4}>
-            <QSquare width="250" itemtext="8" backitemtext="Գծագրիր բառը - 3" onClick={() => this.makeSeen(8)} seen={this.state.seen[8]}/>
+            <QSquare width="250" itemtext="8" backitemtext="Դառթ" onClick={() => this.makeSeen(8)} seen={this.state.seen[8]}/>
           </Cell>
           <Cell col={4}>
             <QSquare width="250" itemtext="9" backitemtext="Գուշակիր բառը - C" onClick={() => this.makeSeen(9)} seen={this.state.seen[9]}/>
@@ -132,7 +132,7 @@ class AboutPage extends React.Component {
         </Grid>
         <Grid className="demo-grid-1">
           <Cell col={4}>
-            <QSquare width="250" itemtext="10" backitemtext="Գծագրիր բառը - 4" onClick={() => this.makeSeen(10)} seen={this.state.seen[10]}/>
+            <QSquare width="250" itemtext="10" backitemtext="կոն" onClick={() => this.makeSeen(10)} seen={this.state.seen[10]}/>
           </Cell>
           <Cell col={4}>
             <QSquare width="250" itemtext="11" backitemtext="Գուշակիր բառը - D" onClick={() => this.makeSeen(11)} seen={this.state.seen[11]}/>

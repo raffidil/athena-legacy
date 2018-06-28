@@ -26,7 +26,7 @@ class AboutPage extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Մարզական';
+    document.title = 'Դաշնակցական';
     db.getItem('sport').then((state) => {
       this.setState(state);
     }).catch((err) => {
@@ -61,7 +61,7 @@ class AboutPage extends React.Component {
           <Cell col={1}>
             <IconButton style={{color: '#263238'}} name="arrow_back" colored onClick={this.gotoCategories}/>
           </Cell>
-          <Cell col={7} style={{color: '#263238'}}>Մարզական</Cell>
+          <Cell col={7} style={{color: '#263238'}}>Դաշնակցական</Cell>
             </Grid>
        </h1>
        <div style={{
@@ -176,41 +176,6 @@ class AboutPage extends React.Component {
            <Cell col={1} style={{marginLeft: 20}}>
              <QButton text="30" onClick={() => this.makeSeen(30)} goto="/sport/29" seen={this.state.seen[30]}/>
            </Cell>
-             <Cell col={1} style={{marginLeft: 20}}>
-               <QButton text="31" onClick={() => this.makeSeen(31)} goto="/sport/30" seen={this.state.seen[31]}/>
-             </Cell>
-             <Cell col={1} style={{marginLeft: 20}}>
-               <QButton text="32" onClick={() => this.makeSeen(32)} goto="/sport/31" seen={this.state.seen[32]}/>
-             </Cell>
-         </Grid>
-
-         <Grid className="demo-grid-1" style={{
-           marginTop: '10px'
-         }}>
-           <Cell col={1} style={{marginLeft: 20}}>
-             <QButton text="33" onClick={() => this.makeSeen(33)} goto="/sport/32" seen={this.state.seen[33]}/>
-           </Cell>
-           <Cell col={1} style={{marginLeft: 20}} style={{marginLeft: 20}}>
-             <QButton text="34" onClick={() => this.makeSeen(34)} goto="/sport/33" seen={this.state.seen[34]}/>
-           </Cell>
-           <Cell col={1} style={{marginLeft: 20}}>
-             <QButton text="35" onClick={() => this.makeSeen(35)} goto="/sport/34" seen={this.state.seen[35]}/>
-           </Cell>
-           <Cell col={1} style={{marginLeft: 20}}>
-             <QButton text="36" onClick={() => this.makeSeen(36)} goto="/sport/35" seen={this.state.seen[36]}/>
-           </Cell>
-           <Cell col={1} style={{marginLeft: 20}}>
-             <QButton text="37" onClick={() => this.makeSeen(37)} goto="/sport/36" seen={this.state.seen[37]}/>
-           </Cell>
-           <Cell col={1} style={{marginLeft: 20}}>
-             <QButton text="38" onClick={() => this.makeSeen(38)} goto="/sport/37" seen={this.state.seen[38]}/>
-           </Cell>
-             <Cell col={1} style={{marginLeft: 20}}>
-               <QButton text="39" onClick={() => this.makeSeen(39)} goto="/sport/38" seen={this.state.seen[39]}/>
-             </Cell>
-             <Cell col={1} style={{marginLeft: 20}}>
-               <QButton text="40" onClick={() => this.makeSeen(40)} goto="/sport/39" seen={this.state.seen[40]}/>
-             </Cell>
          </Grid>
 
 

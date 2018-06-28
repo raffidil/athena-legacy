@@ -101,23 +101,16 @@ export default class Question extends React.Component {
            </Cell>
          </Grid>
           ))}
-          <Grid className="demo-grid-1" style={{marginTop: '10px', marginLeft: 20}}>
+          <Grid className="demo-grid-1" style={{marginTop: '150px', marginLeft: 20}}>
             <Cell col={1} style={{marginTop: -30}}>
               <img src={athena} style={{width: '250%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
             </Cell>
             <Cell col={3} offset={2} style={{fontFamily: "Roboto"}} >
               <div style={{color: "#575756" ,fontSize: 60,marginLeft: -70, marginTop: 10}}>Athena</div>
-              <div style={{color: "#575756" ,fontSize: 25,marginLeft: -70, marginTop: 12}}>Intellectual Game</div>
+              <div style={{color: "#575756" ,fontSize: 25,marginLeft: -70, marginTop: 15}}>Intellectual Game</div>
               <div style={{ width: 200, height: 2,backgroundColor: "#575756",marginLeft: -70, marginTop: 10}}/>
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 10}}>created by Raffi Dilanchian</div>
               <div style={{fontSize: 20,marginLeft: -70, marginTop: 5}}>github.com/raffidil</div>
-            </Cell>
-            <Cell col={3} offset={0}>
-              <div style={{marginTop:10,fontSize: 24, fontFamily: "Roboto",display: this.state.isVisible ? "contents" : "none"}}>
-
-              Շնորհակալութիւն օր. Երանուշ Թահմազեանից մեզ օժանդակելու համար։</div></Cell>
-            <Cell col={1} offset={2} style={{marginTop: 110}}>
-              <IconButton name="info_outline" colored style={{color: '#575756'}} onClick={() => this.setState({ isVisible: !this.state.isVisible }) }/>
             </Cell>
 
           </Grid>

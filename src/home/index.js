@@ -43,10 +43,10 @@ class AboutPage extends React.Component {
         <div style={{
           width: '100%',
           margin: 'auto',
-          marginTop: '-10px'
+          marginTop: '100px'
         }}>
-                  <img src={homepic} style={{width: '35%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
-                  <div style={{fontSize: 30, flexDirection: 'column', textAlign: 'center',color: '#37474F', fontFamily: 'ArTarumianMatenagir'}}>30-րդ Գարնանային խաղեր</div>
+                  <img src={homepic} style={{width: '40%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
+
                   <Button
                     primary
 

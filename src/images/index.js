@@ -135,24 +135,6 @@ class AboutPage extends React.Component {
                 <QButton text="20" onClick={() => this.makeSeen(20)} goto="/images/19" seen={this.state.seen[20]}/>
               </Cell>
                   </Grid>
-                  <Grid className="demo-grid-1">
-                  <Cell col={2}>
-                    <QButton text="21" onClick={() => this.makeSeen(21)} goto="/images/20" seen={this.state.seen[21]}/>
-                  </Cell>
-                  <Cell col={2}>
-                    <QButton text="22" onClick={() => this.makeSeen(22)} goto="/images/21" seen={this.state.seen[22]}/>
-                  </Cell>
-                  <Cell col={2}>
-                    <QButton text="23" onClick={() => this.makeSeen(23)} goto="/images/22" seen={this.state.seen[23]}/>
-                  </Cell>
-                  <Cell col={2}>
-                    <QButton text="24" onClick={() => this.makeSeen(24)} goto="/images/23" seen={this.state.seen[24]}/>
-                  </Cell>
-                  <Cell col={2}>
-                    <QButton text="25" onClick={() => this.makeSeen(25)} goto="/images/24" seen={this.state.seen[25]}/>
-                  </Cell>
-                      </Grid>
-
         </div>
       </Layout>
     );

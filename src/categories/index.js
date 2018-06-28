@@ -14,7 +14,7 @@ import {
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import sciPic from './science.jpg';
-import sportPic from './sport.jpeg';
+import arfPic from './arf.jpg';
 import contactPic from './picture.jpeg';
 import musicPic from './music.jpg';
 import physicalPic from './fun.jpeg';
@@ -96,14 +96,14 @@ class AboutPage extends React.Component {
                 <CardTitle style={{
                   color: '#fff',
                   height: '176px',
-                  background: `url(${sportPic}) center / cover`
+                  background: `url(${arfPic}) center / cover`
                 }}></CardTitle>
                 <CardActions border>
                   <Button colored style={{
                     fontSize: 30,
                     fontWeight: 'bold',
                     color: '#263238'
-                  }} onClick={this.gotoSport}>Մարզական</Button>
+                  }} onClick={this.gotoSport}>Դաշնակցական</Button>
                 </CardActions>
               </Card>
             </Cell>

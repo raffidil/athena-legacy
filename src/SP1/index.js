@@ -68,11 +68,11 @@ export default class Question extends React.Component {
             </Cell>
             <Cell col={11}
               className={s.ScienceQuestionFont}
-              style={{fontSize: (this.question.fontSize || '45px')}}>{this.question.text}
+              style={{    whiteSpace: "pre-line", fontSize: (this.question.fontSize || '45px')}}>{this.question.text}
             </Cell>
           </Grid>
         </h1>
-        <Grid style={{ fontSize: '30px', marginTop: '50px',marginBottom: '-47px'  }} className="demo-grid-1">
+        <Grid style={{ fontSize: '30px', marginTop: '30px',marginBottom: '-47px'  }} className="demo-grid-1">
           <Cell offset={1} col={1} style={{ zIndex: '2' }}>
             <Icon style={{ color: '#E64A19', fontSize: '60px', marginLeft: '90px' }} name="looks_one" />
           </Cell>
