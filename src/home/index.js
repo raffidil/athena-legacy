@@ -46,6 +46,7 @@ class AboutPage extends React.Component {
           marginTop: '100px'
         }}>
                   <img src={homepic} style={{width: '40%',display: 'block',margin: 'auto',marginTop: '0px'}}/>
+                <div style={{marginLeft: '270px', fontSize: '30'}}>Նւիրւած Յուլիս 27-ի 35 ամեակին</div>
 
                   <Button
                     primary

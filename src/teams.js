@@ -79,14 +79,14 @@ const Teams = [
   {
     // Heavy PINK
     id: 1,
-    name: 'Ա խումբ',
+    name: 'Սիմոն Զաւարեան',
     color: '#f8bbd0',
     backColor: '#d81b60',
   },
   {
     // VIOLET
     id: 2,
-    name: 'Բ խումբ',
+    name: 'Սօսէ Մայրիկ',
     color: '#e1bee7',
     backColor: '#8e24aa',
   },
@@ -100,7 +100,7 @@ const Teams = [
   {
     // BLUE SKY
     id: 4,
-    name: 'Գ խումբ',
+    name: 'Գարեգին Նժդեհ',
     color: '#bbdefb',
     backColor: '#0277bd',
   },
@@ -114,14 +114,14 @@ const Teams = [
   {
     // PESTEI
     id: 6,
-    name: 'Դ խումբ',
+    name: 'Արամ Մանուկեան',
     color: '#dcedc8',
     backColor: '#8bc34a',
   },
   {
     // YELLOW
     id: 7,
-    name: 'Ե խումբ',
+    name: 'Արցախ',
     color: '#fff9c4',
     backColor: '#fbc02d',
   },
