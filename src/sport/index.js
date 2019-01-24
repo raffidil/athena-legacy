@@ -101,54 +101,6 @@ class AboutPage extends React.Component {
             <QButton text="8" onClick={() => this.makeSeen(8)} goto="/sport/7" seen={this.state.seen[8]} />
             <QButton text="9" onClick={() => this.makeSeen(9)} goto="/sport/8" seen={this.state.seen[9]} />
           </div>
-
-          {/* <Grid
-            className="demo-grid-1" style={{
-              marginTop: '10px',
-            }}
-          >
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="1" onClick={() => this.makeSeen(1)} goto="/sport/0" seen={this.state.seen[1]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }} style={{ marginLeft: 20 }}>
-              <QButton text="2" onClick={() => this.makeSeen(2)} goto="/sport/1" seen={this.state.seen[2]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="3" onClick={() => this.makeSeen(3)} goto="/sport/2" seen={this.state.seen[3]} />
-            </Cell>
-          </Grid>
-          <Grid
-            className="demo-grid-1" style={{
-              marginTop: '10px',
-            }}
-          >
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="4" onClick={() => this.makeSeen(4)} goto="/sport/3" seen={this.state.seen[4]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }} style={{ marginLeft: 20 }}>
-              <QButton text="5" onClick={() => this.makeSeen(5)} goto="/sport/4" seen={this.state.seen[5]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="6" onClick={() => this.makeSeen(6)} goto="/sport/5" seen={this.state.seen[6]} />
-            </Cell>
-          </Grid>
-          <Grid
-            className="demo-grid-1" style={{
-              marginTop: '10px',
-            }}
-          >
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="7" onClick={() => this.makeSeen(7)} goto="/sport/6" seen={this.state.seen[7]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }} style={{ marginLeft: 20 }}>
-              <QButton text="8" onClick={() => this.makeSeen(8)} goto="/sport/7" seen={this.state.seen[8]} />
-            </Cell>
-            <Cell col={3} style={{ marginLeft: 20 }}>
-              <QButton text="9" onClick={() => this.makeSeen(9)} goto="/sport/8" seen={this.state.seen[9]} />
-            </Cell>
-          </Grid> */}
-
-
         </div>
       </Layout>
     );
