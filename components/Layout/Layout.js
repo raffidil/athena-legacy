@@ -53,27 +53,27 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout" ref={node => (this.root = node)}>
+      <div className="mdl-layout mdl-js-layout" style={{ direction: 'rtl' }} ref={node => (this.root = node)}>
         <div className="mdl-layout__inner-container">
           <Header />
-        <main style={{ background: `url(${mainPic}) center / cover ` }} className="mdl-layout__content" opacity="1">
+          <main style={{ background: `url(${mainPic}) center / cover ` }} className="mdl-layout__content" opacity="1">
             <Card shadow={3} className={s.scoreBoard} >
-              <div style={{width: '100%', marginTop: '4px', marginBottom: '4px'}}>
+              <div style={{ width: '100%', marginTop: '4px', marginBottom: '4px' }}>
 
                 {teams.map(team => (
-                   <Chip
-                     key={team.id}
-                     onClick={() => this.addScore(team.id)}
-                     style={{ backgroundColor: team.color, marginLeft: '10px' }}
-                   >
-                     <ChipContact
-                       className="mdl-color mdl-color-text--white"
-                       style={{ backgroundColor: team.backColor}}
-                     >
-                       {this.state.scores[team.id]}
-                     </ChipContact>
-                     <div style={{fontSize: '21px', fontFamily: 'ArTarumianMatenagir'}}>{team.name}</div>
-                   </Chip>
+                  <Chip
+                    key={team.id}
+                    onClick={() => this.addScore(team.id)}
+                    style={{ backgroundColor: team.color, marginLeft: '10px' }}
+                  >
+                    <ChipContact
+                      className="mdl-color mdl-color-text--white"
+                      style={{ backgroundColor: team.backColor }}
+                    >
+                      {this.state.scores[team.id]}
+                    </ChipContact>
+                    <div style={{ fontSize: '21px', fontFamily: 'ArTarumianMatenagir' }}>{team.name}</div>
+                  </Chip>
                  ))}
 
               </div>

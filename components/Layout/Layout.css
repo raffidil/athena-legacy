@@ -15,20 +15,21 @@
 }
 
 .scoreBoard {
-width: 900px;
-min-height: 50px;
-background: #546E7A;
-position: sticky;
-top:0px;
-margin: auto;
-justify-content: center;
-text-align: center;
+  width: 900px;
+  direction: ltr;
+  min-height: 50px;
+  background: #546E7A;
+  position: sticky;
+  top:0px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo {
   position: absolute;
-height: 80px;
-width: 100px;
-right: 0px;
-top: 82px;
+  height: 80px;
+  width: 100px;
+  right: 0px;
+  top: 82px;
 }

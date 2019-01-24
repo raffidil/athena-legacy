@@ -76,20 +76,20 @@ const Teams = [
   //   color: '#D7CCC8',
   //   backColor: '#6D4C41',
   // },
-  {
-    // Heavy PINK
-    id: 1,
-    name: 'Հ.Մ.Ա.Կ.',
-    color: '#f8bbd0',
-    backColor: '#d81b60',
-  },
-  {
-    // VIOLET
-    id: 2,
-    name: 'Նայիրի',
-    color: '#e1bee7',
-    backColor: '#8e24aa',
-  },
+  // {
+  //   // Heavy PINK
+  //   id: 1,
+  //   name: 'Հ.Մ.Ա.Կ.',
+  //   color: '#f8bbd0',
+  //   backColor: '#d81b60',
+  // },
+  // {
+  //   // VIOLET
+  //   id: 2,
+  //   name: 'Նայիրի',
+  //   color: '#e1bee7',
+  //   backColor: '#8e24aa',
+  // },
   // {
   //   //DARK BLUE
   //   id: 3,
@@ -118,25 +118,25 @@ const Teams = [
     color: '#dcedc8',
     backColor: '#8bc34a',
   },
-  {
-    // YELLOW
-    id: 7,
-    name: 'Րաֆֆի',
-    color: '#fff9c4',
-    backColor: '#fbc02d',
-  },
+  // {
+  //   // YELLOW
+  //   id: 7,
+  //   name: 'Րաֆֆի',
+  //   color: '#fff9c4',
+  //   backColor: '#fbc02d',
+  // },
 
-  {
-    // ORANGE
-    id: 8,
-    name: 'Սարդարապատ',
-    color: '#ffe0b2',
-    backColor: '#fb8c00',
-  },
+  // {
+  //   // ORANGE
+  //   id: 8,
+  //   name: 'Սարդարապատ',
+  //   color: '#ffe0b2',
+  //   backColor: '#fb8c00',
+  // },
   {
     // RED
     id: 9,
-    name: 'Հայաստան',
+    name: 'قرمز',
     color: '#ffcdd2',
     backColor: '#e53935',
   },

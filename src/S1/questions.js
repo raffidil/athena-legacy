@@ -3,22 +3,6 @@ const Questions = [
   {
     id: 'Գ1',
     text: 'Ի՞նչ  են  նշանակում՝ It costs arms and legs',
-    answers: [
-      {
-        text: 'շատ թանկ',
-        correct: true,
-      }, {
-        text: 'էժան',
-        correct: false,
-      }, {
-        text: 'ընկերանալ',
-        correct: false,
-        //fontSize: '25px',
-      }, {
-        text: 'խաշ ուտել',
-        correct: false,
-      },
-    ],
   },
   {
     id: 'Գ2',
@@ -33,7 +17,7 @@ const Questions = [
       }, {
         text: 'գրքով ծեծել',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'դաս չը պարապել',
         correct: false,
@@ -74,7 +58,7 @@ const Questions = [
       }, {
         text: 'խոզի բուդ',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'օդաչու',
         correct: false,
@@ -94,7 +78,7 @@ const Questions = [
       }, {
         text: 'գեր',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'հնարա- ւորութիւն',
         correct: false,
@@ -116,7 +100,7 @@ const Questions = [
       }, {
         text: 'Փոքրիկ Բոսը',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Թոմն ու Ջերին',
         correct: false,
@@ -136,7 +120,7 @@ const Questions = [
       }, {
         text: 'IMF',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'ECO',
         correct: false,
@@ -156,7 +140,7 @@ const Questions = [
       }, {
         text: 'Հայաստան',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Ռուսաստան',
         correct: false,
@@ -176,7 +160,7 @@ const Questions = [
       }, {
         text: 'Սիդնէյ',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Մելբորն',
         correct: false,
@@ -196,7 +180,7 @@ const Questions = [
       }, {
         text: 'Ալասկա',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Վանկովեր',
         correct: false,
@@ -218,7 +202,7 @@ const Questions = [
       }, {
         text: 'Հնդկական',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Հիւսիսային սառցեալ',
         correct: false,
@@ -239,7 +223,7 @@ const Questions = [
       }, {
         text: 'Ամերիկայում',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Բարզիլիաում',
         correct: false,
@@ -260,7 +244,7 @@ const Questions = [
       }, {
         text: 'Եկիպտոսի դոլար',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'դերհամ',
         correct: false,
@@ -280,7 +264,7 @@ const Questions = [
       }, {
         text: 'Վոտքա',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Ռեդ բուլ',
         correct: false,
@@ -300,7 +284,7 @@ const Questions = [
       }, {
         text: 'Կորիայի',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Գերմանիայի',
         correct: false,
@@ -340,7 +324,7 @@ const Questions = [
       }, {
         text: 'Վաթ',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Օհմ',
         correct: false,
@@ -360,7 +344,7 @@ const Questions = [
       }, {
         text: 'Excel',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'Word',
         correct: false,
@@ -380,7 +364,7 @@ const Questions = [
       }, {
         text: '80- միլիոն',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: '7- միլիարդ',
         correct: false,
@@ -400,7 +384,7 @@ const Questions = [
       }, {
         text: 'սիրտը',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'եռիկամը',
         correct: false,
@@ -420,7 +404,7 @@ const Questions = [
       }, {
         text: 'բոլորովին փակւում է',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'փոփոխութեան չի ենթարկւում',
         correct: false,
@@ -442,7 +426,7 @@ const Questions = [
       }, {
         text: 'մանեզիոմից',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'վիտամիններից',
         correct: false,
@@ -463,7 +447,7 @@ const Questions = [
       }, {
         text: 'դեղին',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'սեւ',
         correct: false,
@@ -483,7 +467,7 @@ const Questions = [
       }, {
         text: '5',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: '50',
         correct: false,
@@ -503,7 +487,7 @@ const Questions = [
       }, {
         text: 'մրջիւն',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'չղչիկ',
         correct: false,
@@ -523,7 +507,7 @@ const Questions = [
       }, {
         text: 'օձ',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'ընձուխտ',
         correct: false,
@@ -543,7 +527,7 @@ const Questions = [
       }, {
         text: 'լակթոզ',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'գլութեն',
         correct: false,
@@ -563,7 +547,7 @@ const Questions = [
       }, {
         text: 'C',
         correct: false,
-        //fontSize: '25px',
+        // fontSize: '25px',
       }, {
         text: 'A',
         correct: false,
@@ -573,116 +557,116 @@ const Questions = [
   {
     id: 'Գ29',
     text: 'Ո՞ւմ գրչին է պատկանում ՝ Երեք հրացանակիրներ վէպը:',
-      answers: [
-        {
-          text: 'Ալեքսանդր Դիւմաի',
-          correct: true,
-        }, {
-          text: 'Քուբի Բրայանթի',
-          correct: false,
-        }, {
-          text: 'Վիկտոր Հոգոի',
-          correct: false,
-        }, {
-          text: 'Ալեքսանդր Մակեդոնացու',
-          correct: false,
-          fontSize: '27px',
+    answers: [
+      {
+        text: 'Ալեքսանդր Դիւմաի',
+        correct: true,
+      }, {
+        text: 'Քուբի Բրայանթի',
+        correct: false,
+      }, {
+        text: 'Վիկտոր Հոգոի',
+        correct: false,
+      }, {
+        text: 'Ալեքսանդր Մակեդոնացու',
+        correct: false,
+        fontSize: '27px',
       },
     ],
   },
   {
     id: 'Գ30',
     text: 'Ի՞նչ անւանակոչում ունի Արգենտինա երկիրը:',
-      answers: [
-        {
-          text: 'Արծաթի երկիր',
-          correct: true,
-        }, {
-          text: 'Ոսկու հանք',
-          correct: false,
-        }, {
-          text: 'Սոված երկիր',
-          correct: false,
-        }, {
-          text: 'Կապոյտ երկիր',
-          correct: false,
+    answers: [
+      {
+        text: 'Արծաթի երկիր',
+        correct: true,
+      }, {
+        text: 'Ոսկու հանք',
+        correct: false,
+      }, {
+        text: 'Սոված երկիր',
+        correct: false,
+      }, {
+        text: 'Կապոյտ երկիր',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ31',
     text: 'Ո՞րն է խաղաղութեան խորհրդանիշ ծառը:',
-      answers: [
-        {
-          text: 'Ձիթենի',
-          correct: true,
-        }, {
-          text: 'Սոճի',
-          correct: false,
-        }, {
-          text: 'Ուռենի',
-          correct: false,
-        }, {
-          text: 'Բոնսայ',
-          correct: false,
+    answers: [
+      {
+        text: 'Ձիթենի',
+        correct: true,
+      }, {
+        text: 'Սոճի',
+        correct: false,
+      }, {
+        text: 'Ուռենի',
+        correct: false,
+      }, {
+        text: 'Բոնսայ',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ32',
     text: 'Ո՞ւմ գրչին է պատկանում «Սպանւած աղաւնի» վէպը:',
-      answers: [
-        {
-          text: 'Նարդոսի',
-          correct: true,
-        }, {
-          text: 'Գէորգ Էմինի',
-          correct: false,
-        }, {
-          text: 'Աւետիս Ահարոնեանի',
-          correct: false,
-          fontSize: '30px',
-        }, {
-          text: 'Չարենցի',
-          correct: false,
+    answers: [
+      {
+        text: 'Նարդոսի',
+        correct: true,
+      }, {
+        text: 'Գէորգ Էմինի',
+        correct: false,
+      }, {
+        text: 'Աւետիս Ահարոնեանի',
+        correct: false,
+        fontSize: '30px',
+      }, {
+        text: 'Չարենցի',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ33',
     text: 'Ո՞ր երկրի դրոշն է, որ ուղղանկիւն չէ:',
-      answers: [
-        {
-          text: 'Նեպալի',
-          correct: true,
-        }, {
-          text: 'Կրովասիի',
-          correct: false,
-        }, {
-          text: 'Անգլիաի',
-          correct: false,
-        }, {
-          text: 'Սերբիայի',
-          correct: false,
+    answers: [
+      {
+        text: 'Նեպալի',
+        correct: true,
+      }, {
+        text: 'Կրովասիի',
+        correct: false,
+      }, {
+        text: 'Անգլիաի',
+        correct: false,
+      }, {
+        text: 'Սերբիայի',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ34',
     text: 'Մէկ մայլը, քանի՞ կիլոմետր է:',
-      answers: [
-        {
-          text: '1.906',
-          correct: false,
-        }, {
-          text: '1.960',
-          correct: false,
-        }, {
-          text: '1.609',
-          correct: true,
-        }, {
-          text: '1.690',
-          correct: false,
+    answers: [
+      {
+        text: '1.906',
+        correct: false,
+      }, {
+        text: '1.960',
+        correct: false,
+      }, {
+        text: '1.609',
+        correct: true,
+      }, {
+        text: '1.690',
+        correct: false,
       },
     ],
   },
@@ -708,79 +692,79 @@ const Questions = [
   {
     id: 'Գ36',
     text: 'Ո՞վ է Լեռնային Ղարաբաղի Հանրապետութեան նախագահը:',
-      answers: [
-        {
-          text: 'Բակօ Սահակեան',
-          correct: true,
-        }, {
-          text: 'Վարդան Արամեան',
-          correct: false,
-        }, {
-          text: 'Լեւոն Մկրտչեան',
-          correct: false,
-        }, {
-          text: 'Սպարտակ Թորոսեան',
-          correct: false,
+    answers: [
+      {
+        text: 'Բակօ Սահակեան',
+        correct: true,
+      }, {
+        text: 'Վարդան Արամեան',
+        correct: false,
+      }, {
+        text: 'Լեւոն Մկրտչեան',
+        correct: false,
+      }, {
+        text: 'Սպարտակ Թորոսեան',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ37',
     text: 'Հայկական բանակի կազմաւորման օրն է',
-      answers: [
-        {
-          text: 'Յունւարի 28',
-          correct: true,
-        }, {
-          text: 'Փետրւարի  18',
-          correct: false,
-          fontSize: '29px',
-        }, {
-          text: 'Փետրւարի 28',
-          correct: false,
-        }, {
-          text: 'Յունւարի 18',
-          correct: false,
+    answers: [
+      {
+        text: 'Յունւարի 28',
+        correct: true,
+      }, {
+        text: 'Փետրւարի  18',
+        correct: false,
+        fontSize: '29px',
+      }, {
+        text: 'Փետրւարի 28',
+        correct: false,
+      }, {
+        text: 'Յունւարի 18',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ38',
     text: 'Ու՞մ է պատկանում «Սամւել» վէպ։',
-      answers: [
-        {
-          text: 'Րաֆֆի',
-          correct: true,
-        }, {
-          text: 'Գ. Էմին',
-          correct: false,
-        }, {
-          text: 'Պ. Սևակ',
-          correct: false,
-        }, {
-          text: 'Ա. Իսահակեան',
-          correct: false,
+    answers: [
+      {
+        text: 'Րաֆֆի',
+        correct: true,
+      }, {
+        text: 'Գ. Էմին',
+        correct: false,
+      }, {
+        text: 'Պ. Սևակ',
+        correct: false,
+      }, {
+        text: 'Ա. Իսահակեան',
+        correct: false,
       },
     ],
   },
   {
     id: 'Գ39',
     text: 'Եկեղեցում Մէկ օրւան ընթացքում տարբեր ժամերին կատարւող հասարակաց աղօթքը կոչւում է՝',
-      answers: [
-        {
-          text: 'Ժամերգութիւն',
-          correct: true,
-          fontSize: '27px',
-        }, {
-          text: 'Հաղորդութիւն',
-          correct: false,
-          fontSize: '27px',
-        }, {
-          text: 'Աղօթք',
-          correct: false,
-        }, {
-          text: 'Պատարագ',
-          correct: false,
+    answers: [
+      {
+        text: 'Ժամերգութիւն',
+        correct: true,
+        fontSize: '27px',
+      }, {
+        text: 'Հաղորդութիւն',
+        correct: false,
+        fontSize: '27px',
+      }, {
+        text: 'Աղօթք',
+        correct: false,
+      }, {
+        text: 'Պատարագ',
+        correct: false,
       },
     ],
   },
@@ -804,19 +788,6 @@ const Questions = [
       },
     ],
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   //
