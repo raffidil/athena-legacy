@@ -19,14 +19,13 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions
+  DialogActions,
 } from 'react-mdl';
 import correct from './correct.mp3';
 import wrong from './wrong.mp3';
-
+import text from '../../text';
 
 class ResultDialog extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -41,25 +40,24 @@ class ResultDialog extends React.Component {
       openDialogCorrect: true,
       openDialogWrong: false,
     });
-  }
+  };
   handleOpenDialogWrong = () => {
     this.setState({
       openDialogWrong: true,
       openDialogCorrect: false,
     });
-  }
+  };
   handleCloseDialog = () => {
     this.setState({
       openDialogCorrect: false,
       openDialogWrong: false,
     });
-  }
+  };
   componentWillReceiveProps(nextProps) {
-    if(nextProps.correct) {
+    if (nextProps.correct) {
       const audio = new Audio(correct);
       audio.play();
-    }
-    else if(nextProps.wrong) {
+    } else if (nextProps.wrong) {
       const audio = new Audio(wrong);
       audio.play();
     }
@@ -72,27 +70,53 @@ class ResultDialog extends React.Component {
   render() {
     return (
       <div>
-      <Dialog style={{backgroundColor: '#8bc34a'}} open={this.state.openDialogCorrect}>
-        <DialogTitle style={{color: '#fff', fontSize: '50px',textAlign: 'center'}} >Ճիշտ է !!</DialogTitle>
-        <DialogContent>
-          <p style={{color: '#263238', fontSize: '25px', marginTop: '15px'}}>+{this.props.score} Միաւոր</p>
-        </DialogContent>
-        <DialogActions>
-          <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
-        </DialogActions>
-      </Dialog>
-      <Dialog style={{backgroundColor: '#f44336'}} open={this.state.openDialogWrong}>
-        <DialogTitle style={{color: '#fff', fontSize: '50px',textAlign: 'center'}} >Սխալ է!!</DialogTitle>
-        <DialogContent>
-          <p style={{color: '#263238', fontSize: '25px', marginTop: '15px'}}>0 Միաւոր</p>
-        </DialogContent>
-        <DialogActions>
-          <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
-        </DialogActions>
-      </Dialog></div>
-    )
+        <Dialog
+          style={{ backgroundColor: '#8bc34a' }}
+          open={this.state.openDialogCorrect}
+        >
+          <DialogTitle
+            style={{ color: '#fff', fontSize: '40px', textAlign: 'center' }}
+          >
+            {text.correct}
+          </DialogTitle>
+          <DialogContent>
+            <p
+              style={{ color: '#263238', fontSize: '25px', marginTop: '15px' }}
+            >
+              +{this.props.score} {text.score}
+            </p>
+          </DialogContent>
+          <DialogActions>
+            <Button type="button" onClick={this.handleCloseDialog}>
+              {text.close}
+            </Button>
+          </DialogActions>
+        </Dialog>
+        <Dialog
+          style={{ backgroundColor: '#f44336' }}
+          open={this.state.openDialogWrong}
+        >
+          <DialogTitle
+            style={{ color: '#fff', fontSize: '40px', textAlign: 'center' }}
+          >
+            {text.wrong}
+          </DialogTitle>
+          <DialogContent>
+            <p
+              style={{ color: '#263238', fontSize: '25px', marginTop: '15px' }}
+            >
+              0 {text.score}
+            </p>
+          </DialogContent>
+          <DialogActions>
+            <Button type="button" onClick={this.handleCloseDialog}>
+              {text.close}
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </div>
+    );
   }
-
 }
 
 export default ResultDialog;

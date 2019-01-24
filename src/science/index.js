@@ -67,22 +67,14 @@ class AboutPage extends React.Component {
         </h1>
         <div
           style={{
-            width: '100%',
-            marginLeft: '100px',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            height: '360px',
+            width: '80%',
+            gridTemplateColumns: 'repeat(5, auto)',
+            gridGap: '50px',
+            display: 'grid',
+            margin: 'auto',
           }}
         >
-          <div
-            style={{ display: 'flex',
-              width: '55%' }}
-          >
-            <QButton text="1" onClick={() => this.makeSeen(1)} goto="/science/0" seen={this.state.seen[1]} />
-            <QButton text="2" onClick={() => this.makeSeen(2)} goto="/science/1" seen={this.state.seen[2]} />
-          </div>
+          {Array(25).fill(undefined).map((_, i) => <QButton text={i + 1} onClick={() => this.makeSeen(i + 1)} goto={`/science/${i}`} seen={this.state.seen[i + 1]} />)}
         </div>
       </Layout>
     );
