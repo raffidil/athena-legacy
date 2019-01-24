@@ -77,7 +77,7 @@ export default class Question extends React.Component {
             >
               <p
                 className={s.ScienceQuestionFont}
-                style={{ fontSize: this.question.fontSize || '45px', lineHeight: this.question.lineHeight }}
+                style={{ fontSize: this.question.fontSize || '45px', lineHeight: this.question.lineHeight || '50px' }}
               >
                 {this.question.text}
               </p>
@@ -183,7 +183,7 @@ export default class Question extends React.Component {
           }}
         >
           {' '}
-          <Timer timeout={25} pause={this.state.pauseTimer} />
+          <Timer timeout={this.question.time || 120} pause={this.state.pauseTimer} />
         </div>
         <Dialog
           style={{

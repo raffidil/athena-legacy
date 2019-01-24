@@ -25,6 +25,7 @@ import {
 import timeout from './timeout.jpg';
 import tick from './tick.mp3';
 import finish from './finish.mp3';
+import text from '../../text';
 
 class Timer extends React.Component {
   static propTypes = {
@@ -93,12 +94,12 @@ class Timer extends React.Component {
     return (
       <div>
         <Dialog style={{ background: `url(${timeout}) center / cover` }} open={this.state.openDialog}>
-          <DialogTitle style={{ color: '#b71c1c', fontSize: '45px' }} >Time Out !!</DialogTitle>
+          <DialogTitle style={{ color: '#b71c1c', fontSize: '45px' }} >Time Out</DialogTitle>
           <DialogContent>
-            <p style={{ color: '#e57373', fontSize: '20px' }}>Ժամանակը սպառւած է:</p>
+            <p style={{ color: '#e57373', fontSize: '20px' }}>{text.timeout}</p>
           </DialogContent>
           <DialogActions>
-            <Button type="button" onClick={this.handleCloseDialog}>Close</Button>
+            <Button type="button" onClick={this.handleCloseDialog}>{text.close}</Button>
           </DialogActions>
         </Dialog>
 
@@ -114,7 +115,7 @@ class Timer extends React.Component {
             </Cell>
             <Cell col={3}>
               <Tooltip label="Pause" position="right">
-                <IconButton onClick={this.pauseTime} name="pause"/>
+                <IconButton onClick={this.pauseTime} name="pause" />
               </Tooltip>
             </Cell>
             <Cell col={2}>
