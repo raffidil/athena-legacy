@@ -100,7 +100,7 @@ const Teams = [
   {
     // BLUE SKY
     id: 4,
-    name: 'Ն.Ջ. Արարատ',
+    name: 'آبی',
     color: '#bbdefb',
     backColor: '#0277bd',
   },
@@ -114,7 +114,7 @@ const Teams = [
   {
     // PESTEI
     id: 6,
-    name: 'Թաւրիզ',
+    name: 'سبز',
     color: '#dcedc8',
     backColor: '#8bc34a',
   },

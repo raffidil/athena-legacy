@@ -94,7 +94,7 @@ class AboutPage extends React.Component {
                       fontWeight: 'bold',
                       color: '#263238',
                     }} onClick={this.gotoScience}
-                  >Գիտական</Button>
+                  >علوم</Button>
                 </CardActions>
               </Card>
             </Cell>
@@ -120,7 +120,7 @@ class AboutPage extends React.Component {
                       fontWeight: 'bold',
                       color: '#263238',
                     }} onClick={this.gotoSport}
-                  >Մարզական</Button>
+                  >ریاضی</Button>
                 </CardActions>
               </Card>
             </Cell>
