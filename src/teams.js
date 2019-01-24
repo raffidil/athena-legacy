@@ -111,13 +111,13 @@ const Teams = [
   //   color: '#C8E6C9',
   //   backColor: '#43A047',
   // },
-  {
-    // PESTEI
-    id: 6,
-    name: 'سبز',
-    color: '#dcedc8',
-    backColor: '#8bc34a',
-  },
+  // {
+  //   // PESTEI
+  //   id: 6,
+  //   name: 'سبز',
+  //   color: '#dcedc8',
+  //   backColor: '#8bc34a',
+  // },
   // {
   //   // YELLOW
   //   id: 7,

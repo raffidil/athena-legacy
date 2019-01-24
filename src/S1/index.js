@@ -79,7 +79,7 @@ export default class Question extends React.Component {
                 className={s.ScienceQuestionFont}
                 style={{ fontSize: this.question.fontSize || '45px', lineHeight: this.question.lineHeight || '50px' }}
               >
-                {this.question.text}
+                <span dangerouslySetInnerHTML={{ __html: this.question.text }} />
               </p>
               <p
                 className={s.ScienceQuestionFont}
@@ -88,7 +88,7 @@ export default class Question extends React.Component {
                   fontSize: this.question.fontSize || '30px',
                 }}
               >
-                {this.question.text2}
+                <span dangerouslySetInnerHTML={{ __html: this.question.text2 }} />
               </p>
               <p
                 className={s.ScienceQuestionFont}
@@ -97,7 +97,7 @@ export default class Question extends React.Component {
                   fontSize: this.question.fontSize || '30px',
                 }}
               >
-                {this.question.text3}
+                <span dangerouslySetInnerHTML={{ __html: this.question.text3 }} />
               </p>
             </Cell>
           </Grid>
