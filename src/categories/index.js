@@ -13,8 +13,8 @@ import {
 } from 'react-mdl';
 import Layout from '../../components/Layout';
 import s from './styles.css';
-import sciPic from './science.jpg';
-import sportPic from './sport.jpeg';
+import sciPic from './sci.jpg';
+import mathPic from './math.jpg';
 import contactPic from './picture.jpeg';
 import musicPic from './music.jpg';
 import physicalPic from './fun.jpeg';
@@ -60,7 +60,7 @@ class AboutPage extends React.Component {
         >
           <Grid className="demo-grid-1" >
             <Cell col={1}>
-              <IconButton style={{ color: '#263238' }} name="arrow_back" colored onClick={this.gotoHome} />
+              <IconButton style={{ color: '#263238' }} name="arrow_forward" colored onClick={this.gotoHome} />
             </Cell>
             <Cell col={1} style={{ color: '#263238', width: '80%' }}>{text.categories}</Cell>
           </Grid>
@@ -69,62 +69,64 @@ class AboutPage extends React.Component {
           style={{
             width: '100%',
             margin: 'auto',
+            display: 'flex',
+            marginTop: '100px',
           }}
         >
-          <Grid className="demo-grid-1">
-            <Cell col={4}>
-              <Card
-                shadow={5} style={{
-                  width: CardWidth,
-                  height: '120px',
-                  margin: 'auto',
-                }}
-              >
-                <CardTitle
-                  style={{
-                    color: '#000',
-                    height: '176px',
-                    background: `url(${sciPic}) center / cover`,
-                  }}
-                />
-                <CardActions border>
-                  <Button
-                    colored style={{
-                      fontSize: 30,
-                      fontWeight: 'bold',
-                      color: '#263238',
-                    }} onClick={this.gotoScience}
-                  >علوم</Button>
-                </CardActions>
-              </Card>
-            </Cell>
-            <Cell col={4}>
-              <Card
-                shadow={5} style={{
-                  width: CardWidth,
-                  height: '120px',
-                  margin: 'auto',
-                }}
-              >
-                <CardTitle
-                  style={{
-                    color: '#fff',
-                    height: '176px',
-                    background: `url(${sportPic}) center / cover`,
-                  }}
-                />
-                <CardActions border>
-                  <Button
-                    colored style={{
-                      fontSize: 30,
-                      fontWeight: 'bold',
-                      color: '#263238',
-                    }} onClick={this.gotoSport}
-                  >ریاضی</Button>
-                </CardActions>
-              </Card>
-            </Cell>
-            <Cell col={4}>
+          <Card
+            shadow={5} style={{
+              width: CardWidth,
+              height: '370px',
+              margin: 'auto',
+            }}
+          >
+            <CardTitle
+              style={{
+                color: '#000',
+                height: '300px',
+                background: `url(${sciPic}) center / cover`,
+              }}
+            />
+            <CardActions border>
+              <Button
+                colored style={{
+                  fontSize: 30,
+                  fontWeight: 'bold',
+                  color: '#263238',
+                }} onClick={this.gotoScience}
+              >علوم</Button>
+            </CardActions>
+          </Card>
+          <Card
+            shadow={5} style={{
+              width: CardWidth,
+              height: '370px',
+              margin: 'auto',
+            }}
+          >
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '300px',
+                background: `url(${mathPic}) center / cover`,
+              }}
+            />
+            <CardActions border>
+              <Button
+                colored style={{
+                  fontSize: 30,
+                  fontWeight: 'bold',
+                  color: '#263238',
+                }} onClick={this.gotoSport}
+              >ریاضی</Button>
+            </CardActions>
+          </Card>
+
+
+          {/* <Grid className="demo-grid-1">
+            <Cell col={4} />
+            <Cell col={5} /> */}
+          {/* <Cell col={4}>
               <Card
                 shadow={5} style={{
                   width: CardWidth,
@@ -149,9 +151,9 @@ class AboutPage extends React.Component {
                   >Պատկերներ</Button>
                 </CardActions>
               </Card>
-            </Cell>
-          </Grid>
-          <Grid className="demo-grid-1">
+            </Cell> */}
+          {/* </Grid> */}
+          {/* <Grid className="demo-grid-1">
             <Cell col={4} offset={2}>
               <Card
                 shadow={5} style={{
@@ -204,7 +206,7 @@ class AboutPage extends React.Component {
                 </CardActions>
               </Card>
             </Cell>
-          </Grid>
+          </Grid> */}
         </div>
       </Layout>
     );

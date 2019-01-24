@@ -64,7 +64,7 @@ export default class Question extends React.Component {
         <h1 className={s.fontstyle1} style={{ marginTop: '10px' }}>
           <Grid className="demo-grid-1">
             <Cell col={1}>
-              <IconButton style={{ color: '#263238' }} name="arrow_back" colored onClick={this.gotoSport} />
+              <IconButton style={{ color: '#263238' }} name="arrow_forward" colored onClick={this.gotoSport} />
             </Cell>
             <Cell
               col={11}
@@ -77,7 +77,7 @@ export default class Question extends React.Component {
 
         {this.question.imgUrl && <img style={{ maxWidth: '100%' }}src={this.question.imgUrl} />}
 
-        <div style={{ marginLeft: '299px', marginTop: '15px' }}> <Timer timeout={this.question.time || 300} pause={this.state.pauseTimer} /></div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '55px' }}> <Timer timeout={this.question.time || 300} pause={this.state.pauseTimer} /></div>
         <Dialog style={{ textAlign: 'center', background: `url(${time}) center / cover`, minHeight: '200px' }} open={this.state.openDialogWait} />
         <ResultDialog score="5" correct={this.state.openDialogCorrect} wrong={this.state.openDialogWrong} />
 
