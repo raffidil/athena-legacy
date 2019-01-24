@@ -12,7 +12,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import Link from '../Link';
 import s from './Header.css';
-import logo from './mainlogo.png';
+import logo from './home.svg';
 import text from '../../text.js';
 
 
@@ -30,7 +30,7 @@ class Header extends React.Component {
     return (
       <header className={`mdl-layout__header ${s.header}`} ref={node => (this.root = node)}>
         <div className={`mdl-layout__header-row ${s.row}`}>
-          <img className={s.logo} src={logo} alt="Smiley face" height="42" width="42" />
+          <img className={s.logo} src={logo} alt="Smiley face" height="72" width="72" />
           <Link style={{ marginRight: '75px', fontSize: 28 }} className={`mdl-layout-title ${s.title}`} to="/">
             {text.title}
           </Link>

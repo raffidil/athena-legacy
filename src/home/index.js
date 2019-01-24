@@ -18,7 +18,7 @@
   import db from 'localforage';
   import Layout from '../../components/Layout';
   import s from './styles.css';
-  import homepic from './logo.png';
+  import homepic from './home.svg';
   import Link from '../../components/Link';
   import history from '../history';
   import text from '../../text';
@@ -48,7 +48,7 @@
               marginTop: '-10px',
             }}
           >
-            <img src={homepic} style={{ width: '35%', display: 'block', margin: 'auto', marginTop: '0px' }} />
+            <img src={homepic} style={{ width: '55%', display: 'block', margin: 'auto', marginTop: '0px' }} />
             <div style={{ fontSize: 30, flexDirection: 'column', textAlign: 'center', color: '#37474F', fontFamily: 'ArTarumianMatenagir' }}>{text.title2}</div>
             <Button
               primary
