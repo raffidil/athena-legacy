@@ -12,3 +12,7 @@ npm-debug.log
 
 # Firebase
 firebase-debug.log
+
+#big files
+src/M1/files
+src/P1/files
