@@ -17,7 +17,6 @@ import sciPic from './sci.png';
 import musicPic from './music.jpeg';
 import history from '../history';
 import text from '../../text';
-import categoryCard from '../../components/CategoryCard/CategoryCard';
 import CategoryCard from '../../components/CategoryCard/CategoryCard';
 
 
@@ -26,6 +25,7 @@ class AboutPage extends React.Component {
   componentDidMount() {
     document.title = text.categories;
   }
+  gotoHome = () => { history.push({ pathname: '/' }); }
 
   render() {
     const CardWidth = '300px';
