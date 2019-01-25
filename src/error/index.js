@@ -15,7 +15,7 @@ import {
   Button,
 } from 'react-mdl';
 import history from '../history';
-import Link from '../../components/Link';
+import text from '../../text';
 import s from './styles.css';
 
 class ErrorPage extends React.Component {
@@ -26,7 +26,7 @@ class ErrorPage extends React.Component {
 
   componentDidMount() {
     document.title = this.props.error && this.props.error.status === 404 ?
-      'Page Not Found' : 'Error';
+      text.pageNotFound : text.error;
   }
 
   goBack = (event) => {
@@ -34,29 +34,29 @@ class ErrorPage extends React.Component {
     history.goBack();
   };
 
-  goHome() {
-    history.push({pathname: '/'}); // go to page function
+  goHome = () => {
+    history.push({ pathname: '/' }); // go to page function
   }
 
   render() {
     if (this.props.error) console.error(this.props.error); // eslint-disable-line no-console
 
     const [code, title] = this.props.error && this.props.error.status === 404 ?
-      ['404', 'Page not found'] :
-      ['Error', 'Oups, something went wrong'];
+      ['404', text.pageNotFound] :
+      [text.error, text.somethingWentWrong];
 
     return (
       <div className={s.container}>
         <main className={s.content}>
           <h1 className={s.code}>
-            <p><Icon style={{ fontSize: '300px', color: '#E57373'}} name="error_outline" /></p>
-            <p style={{ fontSize: '100px', color: '#E57373'}}>ERROR</p>
-            <p style={{ fontSize: '30px', color: '#B0BEC5', marginTop: '37px'}}>something went wrong</p>
+            <p><Icon style={{ fontSize: '300px', color: '#E57373' }} name="error_outline" /></p>
+            <p style={{ fontSize: '100px', color: '#E57373', fontVariantCaps: 'all-petite-caps' }}>{text.error}</p>
+            <p style={{ fontSize: '30px', color: '#B0BEC5', marginTop: '37px' }}>{text.somethingWentWrong}</p>
           </h1>
           <br /><br />
           <p className={s.text}>
-              <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A'}} name="arrow_back" />
-              <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A'}} name="home" />
+            <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A' }} name="arrow_back" />
+            <IconButton onClick={this.goHome} ripple style={{ fontSize: '45px', color: '#546E7A' }} name="home" />
           </p>
         </main>
       </div>

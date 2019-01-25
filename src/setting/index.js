@@ -15,6 +15,7 @@ import {
   Button,
 } from 'react-mdl';
 import db from 'localforage';
+import text from '../../text';
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import history from '../history';
@@ -33,17 +34,17 @@ export default class Settings extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Setting';
+    document.title = text.setting;
     setInterval(this.addCounter, 1000);
   }
   OpenDialog() {
     this.setState({
-      openDialog: true
+      openDialog: true,
     });
   }
   CloseDialog() {
     this.setState({
-      openDialog: false
+      openDialog: false,
     });
   }
   agreeClearDb = () => {
@@ -98,8 +99,8 @@ export default class Settings extends React.Component {
     }).catch(console.log);
   }
 
-  gotoHome() {
-    history.push({pathname: '/'});
+  gotoHome = () => {
+    history.push({ pathname: '/' });
   }
 
   render() {
@@ -108,39 +109,39 @@ export default class Settings extends React.Component {
         <h1 className={s.fontstyle1} style={{ marginTop: '10px' }}>
           <Grid className="demo-grid-2">
             <Cell col={1}>
-              <IconButton style={{color: '#310035'}} name="home" colored onClick={this.gotoHome} />
+              <IconButton style={{ color: '#310035' }} name="home" colored onClick={this.gotoHome} />
             </Cell>
-            <Cell col={1}>Setting</Cell>
+            <Cell col={1}>{text.setting}</Cell>
           </Grid>
         </h1>
         <Grid className="demo-grid-2" style={{ marginTop: '-60px' }}>
-          <Cell style={{margin: '-5px'}} col={6}>
+          <Cell style={{ margin: '-5px' }} col={6}>
             <List>
-              <ListItem><span style={{ fontSize: '25px' }}>Score Manual Setting</span></ListItem>
+              <ListItem><span style={{ fontSize: '25px' }}>{text.scoreManualSetting}</span></ListItem>
               {teams.map(team => (
                 <Card shadow={2} style={{ width: '360px', minHeight: '50px', margin: '-12px', marginLeft: '-5px', marginTop: '15px' }}>
-                 <ListItem key={team.id} style={{ marginTop: '-8px' }}>
-                   <span style={{ marginRight: '20px' }}>
-                     <FABButton onClick={() => this.dec(team)} colored style={{ color: '#eceff1', backgroundColor: '#f44336' }} mini>
-                       <Icon name="remove" /> </FABButton>
-                     <FABButton onClick={() => this.inc(team)} colored mini style={{ color: '#eceff1', backgroundColor: '#388e3c', marginLeft: '5px' }} >
-                       <Icon name="add" /> </FABButton>
-                   </span>
-                   <span style={{ color: team.backColor, fontSize: '25px'}}>{team.name}</span>
-                 </ListItem></Card>
+                  <ListItem key={team.id} style={{ marginTop: '-8px' }}>
+                    <span style={{ marginRight: '20px' }}>
+                      <FABButton onClick={() => this.dec(team)} colored style={{ color: '#eceff1', backgroundColor: '#f44336' }} mini>
+                        <Icon name="remove" /> </FABButton>
+                      <FABButton onClick={() => this.inc(team)} colored mini style={{ color: '#eceff1', backgroundColor: '#388e3c', marginLeft: '5px' }} >
+                        <Icon name="add" /> </FABButton>
+                    </span>
+                    <span style={{ color: team.backColor, fontSize: '25px' }}>{team.name}</span>
+                  </ListItem></Card>
                ))}
             </List>
           </Cell>
           <Cell col={6}>
             <List>
-              <ListItem><span style={{ fontSize: '25px' }}>General Setting</span></ListItem>
+              <ListItem><span style={{ fontSize: '25px' }}>{text.generalSetting}</span></ListItem>
               <ListItem>
                 <span style={{ marginRight: '20px' }}>
                   <FABButton onClick={this.clearDb} colored style={{ color: '#37474f', backgroundColor: '#eceff1' }} mini>
                     <Icon name="delete_sweep" />
                   </FABButton>
                 </span>
-                Clear Question Arrangement
+                {text.clearQuestionArrangement}
               </ListItem>
               <ListItem>
                 <span style={{ marginRight: '20px' }}>
@@ -148,7 +149,7 @@ export default class Settings extends React.Component {
                     <Icon name="delete_sweep" />
                   </FABButton>
                 </span>
-                Clear Score Arrangement
+                {text.clearScoreArrangement}
               </ListItem>
               <ListItem>
                 <span style={{ marginRight: '20px' }}>
@@ -156,24 +157,24 @@ export default class Settings extends React.Component {
                     <Icon name="restore" />
                   </FABButton>
                 </span>
-                Restart the Game
+                {text.restartTheGame}
               </ListItem>
             </List>
           </Cell>
         </Grid>
         <div>
-      <Dialog open={this.state.openDialog}>
-        <DialogTitle>Are You Sure Want To Restart the Game?</DialogTitle>
-        <DialogContent>
-          <p>If you prees AGREE all Question and Scores Arrangements will delete.</p>
-          <p>prees CANCEL to close.</p>
-        </DialogContent>
-        <DialogActions>
-          <Button type="button" onClick={this.agreeClearDb}>Agree</Button>
-          <Button type="button" onClick={this.CloseDialog}>Cancel</Button>
-        </DialogActions>
-      </Dialog>
-    </div>
+          <Dialog open={this.state.openDialog}>
+            <DialogTitle>{text.restartDialog.main}</DialogTitle>
+            <DialogContent>
+              <p>{text.restartDialog.p1}</p>
+              <p>{text.restartDialog.p2}</p>
+            </DialogContent>
+            <DialogActions>
+              <Button type="button" onClick={this.agreeClearDb}>{text.agree}</Button>
+              <Button type="button" onClick={this.CloseDialog}>{text.cancel}</Button>
+            </DialogActions>
+          </Dialog>
+        </div>
       </Layout>
     );
   }

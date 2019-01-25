@@ -104,27 +104,27 @@ const Teams = [
   //   color: '#C8E6C9',
   //   backColor: '#43A047',
   // },
-  {
-    // PESTEI
-    id: 6,
-    name: 'Գ Խումբ',
-    color: '#dcedc8',
-    backColor: '#8bc34a',
-  },
-  {
-    // YELLOW
-    id: 7,
-    name: 'Դ Խումբ',
-    color: '#fff9c4',
-    backColor: '#fbc02d',
-  },
-  {
-    // ORANGE
-    id: 8,
-    name: 'Ե Խումբ',
-    color: '#ffe0b2',
-    backColor: '#fb8c00',
-  },
+  // {
+  //   // PESTEI
+  //   id: 6,
+  //   name: 'Գ Խումբ',
+  //   color: '#dcedc8',
+  //   backColor: '#8bc34a',
+  // },
+  // {
+  //   // YELLOW
+  //   id: 7,
+  //   name: 'Դ Խումբ',
+  //   color: '#fff9c4',
+  //   backColor: '#fbc02d',
+  // },
+  // {
+  //   // ORANGE
+  //   id: 8,
+  //   name: 'Ե Խումբ',
+  //   color: '#ffe0b2',
+  //   backColor: '#fb8c00',
+  // },
   // {
   //   //BROWN
   //   id: 9,
@@ -132,13 +132,13 @@ const Teams = [
   //   color: '#D7CCC8',
   //   backColor: '#6D4C41',
   // },
-  {
-    // RED
-    id: 10,
-    name: 'Զ Խումբ',
-    color: '#ffcdd2',
-    backColor: '#e53935',
-  },
+  // {
+  //   // RED
+  //   id: 10,
+  //   name: 'Զ Խումբ',
+  //   color: '#ffcdd2',
+  //   backColor: '#e53935',
+  // },
 ];
 
 export default Teams;

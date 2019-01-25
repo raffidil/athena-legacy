@@ -1,18 +1,9 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React from 'react';
 import Navigation from './Navigation';
 import Link from '../Link';
 import s from './Header.css';
 import logo from './logo.png';
+import text from '../../text';
 
 
 class Header extends React.Component {
@@ -30,11 +21,11 @@ class Header extends React.Component {
       <header className={`mdl-layout__header ${s.header}`} ref={node => (this.root = node)}>
         <div className={`mdl-layout__header-row ${s.row}`}>
           <img className={s.logo} src={logo} alt="Smiley face" height="42" width="42" />
-          <Link style={{marginLeft: '75px',fontSize: 32}} className={`mdl-layout-title ${s.title}`} to="/">
-            Իրանահայ թեմերի երիտասարդական խորհրդաժողով
+          <Link style={{ marginLeft: '75px', fontSize: 32 }} className={`mdl-layout-title ${s.title}`} to="/">
+            {text.header}
           </Link>
-          <div className="mdl-layout-spacer"/>
-          <Navigation/>
+          <div className="mdl-layout-spacer" />
+          <Navigation />
         </div>
       </header>
     );
