@@ -13,10 +13,9 @@ import {
 } from 'react-mdl';
 import Layout from '../../components/Layout';
 import s from './styles.css';
-import sciPic from './sci.png';
-import musicPic from './music.jpeg';
 import history from '../history';
 import text from '../../text';
+import Categories from './categories';
 import CategoryCard from '../../components/CategoryCard/CategoryCard';
 
 
@@ -29,18 +28,6 @@ class AboutPage extends React.Component {
 
   render() {
     const CardWidth = '300px';
-    const Categories = [
-      {
-        text: text.science,
-        image: sciPic,
-        path: '/science',
-      },
-      {
-        text: text.music,
-        image: musicPic,
-        path: '/musics',
-      },
-    ];
 
     return (
       <Layout className={s.content}>
