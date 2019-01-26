@@ -17,7 +17,8 @@ import AnswerCard from '../../components/AnswerCard';
 import history from '../history';
 import Timer from '../../components/Timer';
 import Questions from './questions';
-import time from './time.gif';
+// import time from './time.gif';
+const time = '';
 
 export default class Question extends React.Component {
   constructor(props) {

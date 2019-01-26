@@ -1,7 +1,7 @@
 import text from '../../text';
 import sciPic from './sci.png';
 import musicPic from './music.jpeg';
-import imagePic from './contact.png';
+// import imagePic from './contact.png';
 
 const Categories = [
   {
@@ -19,7 +19,7 @@ const Categories = [
   {
     text: text.picture,
     title: text.pictures,
-    image: imagePic,
+    // image: imagePic,
     path: '/images',
   },
 ];

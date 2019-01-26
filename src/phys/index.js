@@ -10,9 +10,6 @@ import s from './styles.css';
 import history from '../history';
 import BigTimer from '../../components/BigTimer';
 import ReactAudioPlayer from 'react-audio-player';
-import mane from './mane.mp3';
-import holo from './holo.mp3';
-import back from './back.mp3';
 
 class AboutPage extends React.Component {
   constructor(props) {

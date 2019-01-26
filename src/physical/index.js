@@ -19,8 +19,6 @@ import s from './styles.css';
 import QSquare from '../../components/QSquare';
 import Link from '../../components/Link';
 import history from '../history';
-import mane from './mane.jpeg';
-import holo from './holo.jpg';
 import Timer from '../../components/Timer';
 
 
