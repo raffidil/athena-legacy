@@ -1,9 +1,2 @@
-Հայկական Գիտական Խաղ
-
-  Գլխաւոր՝
-  1. Գիտական
-  2. Մարզական
-  3. Նկարների գուշակում
-  4. Երաժշտութեան գուշակում
-  5. Ֆիզիկական (ժամաչափ)
-  
+# Legacy version of Athena 
+This repository is no longer maintained, check out the new version of [Athena Game Show Maker](https://www.athenagameshow.com/).
